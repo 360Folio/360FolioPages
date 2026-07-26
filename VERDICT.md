@@ -91,16 +91,19 @@ after repair all three have byte-identical chrome across their pages.
 has.** The source VR Features page is roughly 40 accordion items split into standard
 and optional; five hosting pages are nothing but pricing tiers.
 
-- **A thinned the problem out** — 18 feature items against the source's 33, six
-  accordions, and the standard-vs-optional distinction almost absent. The page reads
-  well because it dropped the hard part.
-- **B kept the substance** (41 feature items) but largely lost the standard-vs-
-  optional distinction, which is exactly the thing a buyer needs in order to
-  understand what a quote will cost.
-- **C solved it.** All 33 features, each an accordion, inside a filterable matrix
-  with a standard/optional legend, live per-group counts, an expand-all control and
-  a comparison table — 23 standard and 24 optional markings. It is the only
-  direction that treats the specification as a feature rather than a burden.
+- **A thinned the problem out** — as originally delivered, 18 feature items against
+  the source's 33, and the standard-vs-optional distinction almost absent. The page
+  read well because it had dropped the hard part. *(The rebuild carries all 33; see
+  Addendum 2.)*
+- **B kept the substance** but largely lost the standard-vs-optional distinction,
+  which is exactly the thing a buyer needs in order to understand what a quote will
+  cost. *(The rebuild restores the marks; see Addendum 2.)*
+- **C solved it, and solved it first.** All 33 features, each its own accordion,
+  inside a filterable matrix with a standard/optional legend, live per-group counts
+  and an expand-all — 15 standard and 18 optional, counted from the DOM so an editor
+  cannot make the totals drift. It is the only direction that treats the
+  specification as a feature rather than a burden, and the only one that got there
+  without being rebuilt into it.
 
 **C also thinks in WordPress natively.** Its form carries the comment "styled and
 wired by class only — never by input index — because these fields get replaced

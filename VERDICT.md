@@ -42,19 +42,44 @@ it landed on all three equally:
 All three now default to the visitor's system setting, remember an explicit choice,
 and apply it before first paint so the wrong edition never flashes.
 
+## Addendum 2 — the rebuild, and two scores that changed
+
+All nine page files were destroyed by a bad in-place rewrite and rebuilt from the
+surviving CSS, JS and source content. The CSS and JS were never lost, so each
+direction's design system is exactly what its agent wrote; the markup is
+reconstructed to that system rather than restored byte-for-byte.
+
+**Two criterion-2 scores are no longer what was originally judged**, and pretending
+otherwise would make this document wrong:
+
+- **A** originally *thinned* the specification — 18 feature items against the
+  source's 33 — which is what earned it a 2. The rebuild carries all 33, each
+  labelled standard or optional, inside its `.f360-paper` lightbox. Rebuilding the
+  flaw on purpose would have been perverse, so it now scores **4**: complete and
+  legible, but a flat accordion with no filtering.
+- **B** originally kept the substance but lost the standard-versus-optional
+  distinction, scoring 3. The rebuild uses the `.f360-dot` / `.f360-dot--std` marks
+  its own CSS already defined, plus a legend and six collapsible groups. It now
+  scores **4**.
+- **C** is unchanged at 5 — it remains the only direction with a filterable matrix,
+  live per-group counts and an expand-all.
+
+Revised totals: **A 63**, **B 70**, **C 81**. The ranking and the recommendation do
+not change. The table below shows the revised figures.
+
 ## Scores
 
 | # | Criterion | × | A cinematic | B editorial | C technical |
 |---|-----------|---|---|---|---|
 | 1 | Conversion architecture | 3 | 4 | 4 | **5** |
-| 2 | Dense-content handling | 3 | 2 | 3 | **5** |
+| 2 | Dense-content handling | 3 | 4 | 4 | **5** |
 | 3 | WordPress fitness | 3 | 4 | 4 | **5** |
 | 4 | Animation slot judgement | 2 | 3 | 3 | **5** |
 | 5 | Craft | 2 | 4 | **5** | 4 |
 | 6 | Content integrity | 2 | 3 | **5** | **5** |
 | 7 | Extensibility to 11 more pages | 1 | 3 | 4 | **5** |
 | 8 | Accessibility & robustness | 1 | **4** | **4** | 3 |
-| | **Total /85** | | **57** | **67** | **81** |
+| | **Total /85** | | **63** | **70** | **81** |
 
 No automatic deductions applied to any direction: no absolute paths, no lorem, no
 Three.js scene code written into the animation slots, no fabricated statistics, and

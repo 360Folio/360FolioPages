@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virtual Reality — 360Folio</title>
+<meta name="description" content="360° virtual tours, CGI tours from CAD, turntable object photography, live-action 360° film, gigapixel panoramas and large-format imaging. Capture, post-production and the interactive front end from one studio.">
+<link rel="stylesheet" href="assets/css/system.css?v=5">
+<script>
+/* Applies the stored edition before first paint. In WordPress this goes in
+   header.php above wp_head(). */
+(function(){try{var t=localStorage.getItem('f360-theme');if(t)document.documentElement.setAttribute('data-f360-theme',t);}catch(e){}}());
+</script>
+</head>
+<body>
+
+<div class="f360-gridproof" aria-hidden="true"><div class="f360-gridproof__inner"></div></div>
+
+<!-- ===================== header.php — byte-identical on every page ===================== -->
+<a class="f360-skip" href="#main">Skip to content</a>
+
+<header class="f360-masthead">
+  <div class="f360-masthead__colophon">
+    <div class="f360-wrap">
+      <span>Immersive Media &amp; Creative Technology Studio</span>
+      <span>Karachi &middot; Riyadh &middot; Dallas &mdash; since 2013</span>
+      <button class="f360-toolbtn f360-toolbtn--edition" type="button" data-theme-toggle aria-pressed="false"><span data-theme-label>Day edition</span></button>
+    </div>
+  </div>
+
+  <div class="f360-masthead__bar">
+    <div class="f360-wrap">
+      <a class="f360-brand" href="index.html" aria-label="360Folio — home">
+        <img class="f360-brand__img f360-brand__img--light" src="assets/img/360folio-logo.png" alt="360Folio" width="880" height="154" decoding="async">
+        <img class="f360-brand__img f360-brand__img--dark" src="assets/img/360folio-logo-dark.png" alt="360Folio" width="880" height="154" decoding="async">
+      </a>
+
+      <button class="f360-nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav">
+        <span data-nav-toggle-label>Menu</span>
+      </button>
+
+      <nav class="f360-nav" id="nav" data-nav data-open="false" aria-label="Primary">
+        <ul class="f360-nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li class="f360-nav__item--has-sub" data-open="false">
+            <a href="services.html">Services</a>
+            <ul class="f360-nav__sub">
+              <li><a href="services.html">All services</a></li>
+              <li><a href="virtual-reality.html">Virtual Reality</a></li>
+              <li><a href="vr-benefits.html">VR Benefits</a></li>
+              <li><a href="vr-features.html">VR Features</a></li>
+              <li><a href="vr-process.html">VR Process</a></li>
+              <li><a href="interactive-software.html">Interactive Software</a></li>
+              <li><a href="web-development.html">Web Development</a></li>
+              <li><a href="web-hosting.html">Web Hosting</a></li>
+            </ul>
+          </li>
+          <li><a href="work.html">Work</a></li>
+          <li class="f360-nav__item--has-sub" data-open="false">
+            <a href="about.html">Studio</a>
+            <ul class="f360-nav__sub">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="clients.html">Clients</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="f360-masthead__cta">
+        <a class="f360-cta" href="contact.html">Start a project <span class="f360-cta__arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="f360-runhead" data-runhead data-visible="false">
+    <div class="f360-wrap">
+      <span class="f360-runhead__num" data-runhead-num></span>
+      <span data-runhead-label></span>
+    </div>
+  </div>
+
+  <div class="f360-masthead__progress" data-progress></div>
+</header>
+
+<main class="f360-main" id="main">
+
+  <!-- ============ Page opener ============ -->
+  <section class="f360-pageopener" data-opener>
+    <div class="f360-wrap">
+      <div class="f360-pageopener__grid">
+
+        <div class="f360-pageopener__crumb">
+          <div class="f360-opener__kicker f360-eyebrow">
+            <a class="f360-link" href="index.html">Home</a> &mdash; <a class="f360-link" href="services.html">Services</a> &mdash; Virtual Reality
+          </div>
+        </div>
+
+        <h1 class="f360-pageopener__title f360-display">
+          <span data-opener-line>Go deeper than</span>
+          <span data-opener-line>a <em class="f360-italic">flat</em> photograph.</span>
+        </h1>
+
+        <p class="f360-pageopener__lede f360-lede">Six ways to record a place and one platform to deliver it &mdash; with the whole specification published, including which of the thirty-three features cost extra and which never do.</p>
+
+        <div class="f360-pageopener__meta">
+          <div class="f360-spec">
+            <div class="f360-spec__row"><span class="f360-spec__k">Formats</span><span class="f360-spec__v">Six capture types</span><span class="f360-spec__n f360-num">06</span></div>
+            <div class="f360-spec__row"><span class="f360-spec__k">Features</span><span class="f360-spec__v">15 standard · 18 optional</span><span class="f360-spec__n f360-num">33</span></div>
+            <div class="f360-spec__row"><span class="f360-spec__k">Resolution floor</span><span class="f360-spec__v">Per panorama</span><span class="f360-spec__n f360-num">60MPx</span></div>
+            <div class="f360-spec__row"><span class="f360-spec__k">Largest delivered</span><span class="f360-spec__v">Islamabad panorama</span><span class="f360-spec__n f360-num">3.1GPx</span></div>
+          </div>
+          <p style="margin-top:var(--f360-s5)"><a class="f360-cta" href="contact.html">Start a project <span class="f360-cta__arrow" aria-hidden="true">&rarr;</span></a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Animation slot ============
+       Between the opener and the formats. The formats are what a reader
+       cannot picture from prose, so the plate runs first and earns the
+       specification that follows it. -->
+  <section class="f360-anim" id="anim-virtual-reality" data-anim-slot="virtual-reality" aria-label="Interactive animation">
+    <div class="f360-anim__stage">
+      <canvas class="f360-anim__canvas" data-anim-canvas hidden></canvas>
+      <div class="f360-anim__sweep" aria-hidden="true"></div>
+      <div class="f360-anim__placeholder" data-anim-placeholder>
+        <span class="f360-anim__eyebrow">Interactive animation slot</span>
+        <h2 class="f360-anim__title">Virtual Reality &mdash; spec to be defined</h2>
+        <p class="f360-anim__note">Three.js / GSAP scene mounts to [data-anim-canvas]. Full-bleed, ~90vh, height reserved now so the canvas swap causes zero layout shift.</p>
+        <p class="f360-anim__meta">Runs before the specification: this is the page where a reader decides whether spherical capture is worth paying for, and that is decided by feel first.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 01 Formats ============ -->
+  <section class="f360-section" data-section-num="01" data-section-label="Formats">
+    <div class="f360-wrap">
+      <div class="f360-section__head" data-reveal data-reveal-group>
+        <p class="f360-section__num f360-num">01</p>
+        <h2 class="f360-section__title f360-h2">Six ways to record a place.</h2>
+        <div class="f360-section__aside">
+          <p class="f360-note">Most projects combine two or three. Whatever the mix, they arrive in one viewer with one set of navigation, branding and access controls.</p>
+        </div>
+      </div>
+
+      <div class="f360-spreads" data-reveal data-reveal-group>
+
+        <article class="f360-spread" data-f360-repeat="feature">
+          <span class="f360-spread__num f360-num">01.1</span>
+          <div class="f360-spread__text">
+            <h3 class="f360-h3">360&deg; Virtual Tours</h3>
+            <p>A tour lets a visitor do more than look at your location &mdash; it lets them move through it. Curious about the architecture? Click a hotspot. Want to know where this room sits in the building? Open the floor plan.</p>
+            <p>Every tour is custom-built for the client, matched to their branding and to the site it will live in. We can work from full brand guidelines or simply from the look and feel of your current pages.</p>
+          </div>
+          <figure class="f360-spread__plate f360-plate">
+            <div class="f360-plate__frame">
+              <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+                <circle cx="100" cy="75" r="56" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></circle>
+                <ellipse cx="100" cy="75" rx="56" ry="19" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></ellipse>
+              </svg>
+            </div>
+            <figcaption class="f360-plate__cap"><span>Fig. 01.1</span><span>Spherical capture</span></figcaption>
+          </figure>
+        </article>
+
+        <article class="f360-spread f360-spread--flip" data-f360-repeat="feature">
+          <span class="f360-spread__num f360-num">01.2</span>
+          <div class="f360-spread__text">
+            <h3 class="f360-h3">CGI Virtual Tours</h3>
+            <p>We are at the forefront of computer-generated imagery and of 360° tours, so we combined the two. The result lets you visualise and experience a property before a single brick has been laid.</p>
+            <p>We work from CAD files and a detailed build specification, so the finished tour looks and feels as true to life as the completed building. Rendered in Autodesk 3ds Max and Lumion.</p>
+          </div>
+          <figure class="f360-spread__plate f360-plate">
+            <div class="f360-plate__frame">
+              <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+                <rect x="42" y="30" width="116" height="92" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></rect>
+                <path d="M42 76h116M100 30v92" stroke="currentColor" stroke-width="0.8" data-draw></path>
+              </svg>
+            </div>
+            <figcaption class="f360-plate__cap"><span>Fig. 01.2</span><span>Built from CAD</span></figcaption>
+          </figure>
+        </article>
+
+        <article class="f360-spread" data-f360-repeat="feature">
+          <span class="f360-spread__num f360-num">01.3</span>
+          <div class="f360-spread__text">
+            <h3 class="f360-h3">360&deg; Objects</h3>
+            <p>Object photography is the most truthful way to show a product online. Objects of any size &mdash; from jewellery up to cars &mdash; are placed on a turntable and photographed in sequence, so the viewer can spin them.</p>
+            <p>Hotspots are captured too, letting users click into particular areas of detail.</p>
+          </div>
+          <figure class="f360-spread__plate f360-plate">
+            <div class="f360-plate__frame">
+              <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+                <ellipse cx="100" cy="104" rx="58" ry="18" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></ellipse>
+                <circle cx="100" cy="66" r="30" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></circle>
+              </svg>
+            </div>
+            <figcaption class="f360-plate__cap"><span>Fig. 01.3</span><span>Turntable sequence</span></figcaption>
+          </figure>
+        </article>
+
+        <article class="f360-spread f360-spread--flip" data-f360-repeat="feature">
+          <span class="f360-spread__num f360-num">01.4</span>
+          <div class="f360-spread__text">
+            <h3 class="f360-h3">360&deg; Videos</h3>
+            <p>Also known as VR video or live-action VR, this places viewers inside the world of a film and lets them look anywhere in it.</p>
+            <p>Shooting 360° differs from traditional filming in almost every respect. As we have developed we have nearly rewritten the rulebook, building a set of tools and techniques specific to the format &mdash; which is why unusual shoots do not frighten us.</p>
+          </div>
+          <figure class="f360-spread__plate f360-plate">
+            <div class="f360-plate__frame">
+              <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+                <circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></circle>
+                <path d="M88 58l30 17-30 17z" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></path>
+              </svg>
+            </div>
+            <figcaption class="f360-plate__cap"><span>Fig. 01.4</span><span>Live-action VR</span></figcaption>
+          </figure>
+        </article>
+
+        <article class="f360-spread" data-f360-repeat="feature">
+          <span class="f360-spread__num f360-num">01.5</span>
+          <div class="f360-spread__text">
+            <h3 class="f360-h3">Gigapixel Panoramas</h3>
+            <p>Giant photographs made from hundreds or thousands of individual images stitched together. The resolution can be so great that you zoom in and see detail you would not have been able to see with the human eye.</p>
+            <p>Our largest is a 3,100 megapixel view of Islamabad from Daman-e-Koh in the Margalla Hills &mdash; Pakistan's first gigapixel panorama.</p>
+          </div>
+          <figure class="f360-spread__plate f360-plate">
+            <div class="f360-plate__frame">
+              <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+                <path d="M18 112l38-46 30 30 26-36 40 52z" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></path>
+                <circle cx="146" cy="42" r="12" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></circle>
+              </svg>
+            </div>
+            <figcaption class="f360-plate__cap"><span>Fig. 01.5</span><span>3,100 megapixels</span></figcaption>
+          </figure>
+        </article>
+
+        <article class="f360-spread f360-spread--flip" data-f360-repeat="feature">
+          <span class="f360-spread__num f360-num">01.6</span>
+          <div class="f360-spread__text">
+            <h3 class="f360-h3">Large-Format Imaging</h3>
+            <p>Multi-resolution imagery of almost anything &mdash; works of art, which is vital for restorers and collectors, façades for architects, or any subject needing detail beyond what the best single camera can hold.</p>
+            <p>Achieved through close telephoto work combined with mosaic stitching, letting the viewer zoom to within half a degree of field.</p>
+          </div>
+          <figure class="f360-spread__plate f360-plate">
+            <div class="f360-plate__frame">
+              <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+                <rect x="26" y="26" width="148" height="98" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></rect>
+                <rect x="76" y="56" width="48" height="38" fill="none" stroke="currentColor" stroke-width="0.8" data-draw></rect>
+              </svg>
+            </div>
+            <figcaption class="f360-plate__cap"><span>Fig. 01.6</span><span>Mosaic stitching</span></figcaption>
+          </figure>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 The specification ============ -->
+  <section class="f360-section f360-section--tint" data-section-num="02" data-section-label="The specification">
+    <div class="f360-wrap">
+      <div class="f360-section__head" data-reveal data-reveal-group>
+        <p class="f360-section__num f360-num">02</p>
+        <h2 class="f360-section__title f360-h2">All thirty-three features, and what each one costs.</h2>
+        <div class="f360-section__aside">
+          <p class="f360-note">Published in full, because hidden line items are how this industry usually works. Fifteen are included in the regular price; eighteen are quoted individually, in writing, before you commit.</p>
+        </div>
+      </div>
+
+      <div class="f360-marks" data-reveal>
+        <ul class="f360-legend" style="display:flex;gap:var(--f360-s5);flex-wrap:wrap;">
+          <li><span class="f360-dot f360-dot--std" aria-hidden="true"></span> Standard &mdash; included <span class="f360-num">(15)</span></li>
+          <li><span class="f360-dot" aria-hidden="true"></span> Optional &mdash; priced separately <span class="f360-num">(18)</span></li>
+        </ul>
+        <div class="f360-actions">
+          <button class="f360-toolbtn" type="button" data-acc-all="open">Open all</button>
+          <button class="f360-toolbtn" type="button" data-acc-all="close">Close all</button>
+        </div>
+      </div>
+
+      <div class="f360-accgroup" data-reveal data-reveal-group>
+
+        <!-- ---- our quality ---- -->
+        <div class="f360-acc" data-acc>
+          <button class="f360-acc__btn" type="button" data-acc-btn aria-expanded="true" aria-controls="acc-quality">
+            <span class="f360-num">02.1</span>
+            <span class="f360-acc__label">Our quality</span>
+            <span class="f360-acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="f360-acc__panel" id="acc-quality" data-acc-panel>
+            <div class="f360-acc__inner">
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Highest resolution</span>
+                <p class="f360-feat__desc">We start from 60 megapixels as our standard &mdash; and perhaps lowest &mdash; resolution, up to thousands of megapixels for gigapixel work.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">HDR photography</span>
+                <p class="f360-feat__desc">A blend of multiple exposures of the same aspect so both bright and dark areas are seen with clarity. We use HDR in all our work.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Complete scene</span>
+                <p class="f360-feat__desc">Real floor and real ceiling. No patching, and no sign of the crew or their equipment &mdash; not their shadows, not their reflections.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Faster dynamic loading</span>
+                <p class="f360-feat__desc">Multi-resolution loading of the zone being displayed, so the visible area arrives first.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- user experience ---- -->
+        <div class="f360-acc" data-acc>
+          <button class="f360-acc__btn" type="button" data-acc-btn aria-expanded="false" aria-controls="acc-ux">
+            <span class="f360-num">02.2</span>
+            <span class="f360-acc__label">User experience</span>
+            <span class="f360-acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="f360-acc__panel" id="acc-ux" data-acc-panel>
+            <div class="f360-acc__inner">
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Custom branding with logo integration</span>
+                <p class="f360-feat__desc">Your logo inside the tour, designed to your brand and made linkable &mdash; useful for reinforcing whose facilities these are.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Navigation hotspots &amp; controls</span>
+                <p class="f360-feat__desc">Buttons to pan, tilt and zoom with a help screen for new viewers, plus graphic hotspots to walk from one image to the next.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Auto-rotation &amp; auto-tour</span>
+                <p class="f360-feat__desc">Automatic sequencing that activates when the tour is left untouched &mdash; for a screen in a lobby or a public place.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Full-screen responsive design</span>
+                <p class="f360-feat__desc">Adapts to every screen size dynamically, from a phone to a wall-mounted display.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Major browser compatibility &mdash; HTML5</span>
+                <p class="f360-feat__desc">No plugin dependency of any kind. It opens in the browser your visitors already have.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Mobile &amp; tablet compatibility</span>
+                <p class="f360-feat__desc">Not a reduced version &mdash; the same tour, on every device.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Gyroscope control</span>
+                <p class="f360-feat__desc">View the tour by turning the device. Turn the phone and the view turns with it.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">VR headset mode</span>
+                <p class="f360-feat__desc">Compatible with head-mounted displays over WebXR &mdash; Meta Quest, Apple Vision Pro and HTC Vive among them.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Social media integration with direct-linking</span>
+                <p class="f360-feat__desc">Share in one click. Direct-linking carries the exact view, so the next viewer lands where the sharer was looking.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Google Analytics integration</span>
+                <p class="f360-feat__desc">Measure conversions and see how visitors find and move through the tour.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Multiple language support</span>
+                <p class="f360-feat__desc">Interface, labels and hotspot content in more than one language. We work in English, Urdu and Arabic.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Website or PDF embedding</span>
+                <p class="f360-feat__desc">Your website or any custom HTML page opens in a popup inside the tour; a PDF or catalogue can be embedded the same way.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- security ---- -->
+        <div class="f360-acc" data-acc>
+          <button class="f360-acc__btn" type="button" data-acc-btn aria-expanded="false" aria-controls="acc-security">
+            <span class="f360-num">02.3</span>
+            <span class="f360-acc__label">Security restrictions</span>
+            <span class="f360-acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="f360-acc__panel" id="acc-security" data-acc-panel>
+            <div class="f360-acc__inner">
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Domain restriction</span>
+                <p class="f360-feat__desc">The tour runs only on domains you nominate, so nobody else can host it on their own website.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Time restriction</span>
+                <p class="f360-feat__desc">The tour expires on a set date and will not run after it &mdash; for a campaign, a tender window or a licensed exhibition.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Offline restriction</span>
+                <p class="f360-feat__desc">The tour will not run from a local copy. Saving the files produces nothing that works.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- multimedia ---- -->
+        <div class="f360-acc" data-acc>
+          <button class="f360-acc__btn" type="button" data-acc-btn aria-expanded="false" aria-controls="acc-media">
+            <span class="f360-num">02.4</span>
+            <span class="f360-acc__label">Integrated multimedia</span>
+            <span class="f360-acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="f360-acc__panel" id="acc-media" data-acc-panel>
+            <div class="f360-acc__inner">
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Dynamic video &mdash; a virtual guide</span>
+                <p class="f360-feat__desc">Partial spherical video embedded in a still panorama: a process running, or a person speaking as a guide standing in the room.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Standard video embed</span>
+                <p class="f360-feat__desc">Rather than leaving a television or LED screen blank in shot, a video plays on it inside the tour.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Photo galleries or images</span>
+                <p class="f360-feat__desc">Galleries or individual images added inside the scene, each with a title and caption.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Still images or object photography</span>
+                <p class="f360-feat__desc">We photograph the items or scenes you want embedded as flat images inside a panorama.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Click-to-open media hotspots</span>
+                <p class="f360-feat__desc">Hotspots that open any media on click &mdash; text, image, sound, video, a website, an HTML page or a PDF.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Background music or sound</span>
+                <p class="f360-feat__desc">A sound, voice-over or piece of music set as the background of one panorama or of the whole tour.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Audio recording or computerised voice-over</span>
+                <p class="f360-feat__desc">A hired voice artist, or a computerised voice-over in male and female voices, English only.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- maps ---- -->
+        <div class="f360-acc" data-acc>
+          <button class="f360-acc__btn" type="button" data-acc-btn aria-expanded="false" aria-controls="acc-maps">
+            <span class="f360-num">02.5</span>
+            <span class="f360-acc__label">Maps &amp; floor plans</span>
+            <span class="f360-acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="f360-acc__panel" id="acc-maps" data-acc-panel>
+            <div class="f360-acc__inner">
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Multi-level floor plan integration</span>
+                <p class="f360-feat__desc">Interactive 2D or 3D plans with clickable spots linking to each location. If you have none, we can have them designed.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Dynamic map integration</span>
+                <p class="f360-feat__desc">OpenStreetMap, Bing Maps, Google Maps or Yandex, linked to the scenes.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">GPS-based positioning</span>
+                <p class="f360-feat__desc">Each panorama carries its real coordinates, placing it precisely on any integrated map.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Compass and radar</span>
+                <p class="f360-feat__desc">The compass shows the viewing direction; the radar shows the current field of view.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- effects ---- -->
+        <div class="f360-acc" data-acc>
+          <button class="f360-acc__btn" type="button" data-acc-btn aria-expanded="false" aria-controls="acc-effects">
+            <span class="f360-num">02.6</span>
+            <span class="f360-acc__label">Special effects</span>
+            <span class="f360-acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="f360-acc__panel" id="acc-effects" data-acc-panel>
+            <div class="f360-acc__inner">
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Little-planet introduction</span>
+                <p class="f360-feat__desc">The tour opens as a tiny planet that unfolds into the standard view &mdash; a strong first impression, and it teaches the viewer they are inside a sphere.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Rain &amp; snow effects</span>
+                <p class="f360-feat__desc">Weather overlaid on an outdoor scene, for seasonal campaigns or conditions the shoot day did not provide.</p>
+              </div>
+              <div class="f360-feat" data-f360-repeat="feature">
+                <span class="f360-feat__mark"><span class="f360-dot f360-dot--std" aria-hidden="true"></span></span>
+                <span class="f360-feat__name">Panoramic projections menu</span>
+                <p class="f360-feat__desc">A contextual menu of every projection: normal, fisheye, architectural, stereographic, pannini, little planet and fisheye ball. All our projects include it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 Packages ============ -->
+  <section class="f360-section" data-section-num="03" data-section-label="Packages">
+    <div class="f360-wrap">
+      <div class="f360-section__head" data-reveal data-reveal-group>
+        <p class="f360-section__num f360-num">03</p>
+        <h2 class="f360-section__title f360-h2">Three shapes of project.</h2>
+        <div class="f360-section__aside">
+          <p class="f360-note">Every tour is quoted individually &mdash; how many spaces and how far the crew travels change with every building. These are the shapes those quotes take.</p>
+        </div>
+      </div>
+
+      <div class="f360-plans" data-reveal data-reveal-group>
+        <article class="f360-plan" data-f360-repeat="plan">
+          <p class="f360-plan__for f360-eyebrow">Package A</p>
+          <h3 class="f360-plan__name f360-h3">Single site</h3>
+          <p class="f360-plan__price f360-num">Quoted per project</p>
+          <ul class="f360-plan__list">
+            <li>All fifteen standard features</li>
+            <li>60 MP floor, HDR throughout</li>
+            <li>Logo integration &amp; branding</li>
+            <li>Website integration</li>
+            <li>Hotspot navigation</li>
+          </ul>
+          <p style="margin-top:auto;padding-top:var(--f360-s4)"><a class="f360-textcta" href="contact.html">Request a quote &rarr;</a></p>
+        </article>
+
+        <article class="f360-plan" data-f360-repeat="plan">
+          <p class="f360-plan__for f360-eyebrow f360-eyebrow--accent">Package B — most ordered</p>
+          <h3 class="f360-plan__name f360-h3">Campus or complex</h3>
+          <p class="f360-plan__price f360-num">Quoted per project</p>
+          <ul class="f360-plan__list">
+            <li>Everything in Package A</li>
+            <li>Multi-level floor plans</li>
+            <li>Compass, radar &amp; mapping</li>
+            <li>Media hotspots throughout</li>
+            <li>Multi-language interface</li>
+          </ul>
+          <p style="margin-top:auto;padding-top:var(--f360-s4)"><a class="f360-textcta" href="contact.html">Request a quote &rarr;</a></p>
+        </article>
+
+        <article class="f360-plan" data-f360-repeat="plan">
+          <p class="f360-plan__for f360-eyebrow">Package C</p>
+          <h3 class="f360-plan__name f360-h3">Production</h3>
+          <p class="f360-plan__price f360-num">Scoped in concept</p>
+          <ul class="f360-plan__list">
+            <li>360° video or gigapixel capture</li>
+            <li>CGI tours built from CAD</li>
+            <li>Location scouting &amp; securing</li>
+            <li>Full post-production</li>
+            <li>Headset-ready delivery</li>
+          </ul>
+          <p style="margin-top:auto;padding-top:var(--f360-s4)"><a class="f360-textcta" href="contact.html">Request a quote &rarr;</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 Process ============ -->
+  <section class="f360-section f360-section--tight" data-section-num="04" data-section-label="Process">
+    <div class="f360-wrap">
+      <div class="f360-section__head" data-reveal data-reveal-group>
+        <p class="f360-section__num f360-num">04</p>
+        <h2 class="f360-section__title f360-h2">You approve a prototype first.</h2>
+        <div class="f360-section__aside">
+          <p class="f360-note">Seven steps from first call to launch. Nothing is chargeable until you agree the quote at step two.</p>
+        </div>
+      </div>
+
+      <ul class="f360-dashlist" data-reveal data-reveal-group>
+        <li data-f360-repeat="feature"><span>01</span><span><b>Assessment</b> — we visit the facility and work out what the project actually needs.</span></li>
+        <li data-f360-repeat="feature"><span>02</span><span><b>Concept</b> — our approach and idea in writing, with financial and time estimates.</span></li>
+        <li data-f360-repeat="feature"><span>03</span><span><b>Photography</b> — on agreement the shoot begins: HDR, complete spheres, no crew visible.</span></li>
+        <li data-f360-repeat="feature"><span>04</span><span><b>Post-production</b> — RAW treatment, retouching, stitching and projection, then the interface.</span></li>
+        <li data-f360-repeat="feature"><span>05</span><span><b>Beta release</b> — a working prototype you can click through and criticise.</span></li>
+        <li data-f360-repeat="feature"><span>06</span><span><b>Your revisions</b> — design and UX changes go in before anything is signed off.</span></li>
+        <li data-f360-repeat="feature"><span>07</span><span><b>Final release</b> — integrated into your site, live, and yours.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Close ============ -->
+  <section class="f360-close">
+    <div class="f360-wrap">
+      <div class="f360-close__grid">
+        <div class="f360-close__title">
+          <p class="f360-eyebrow f360-eyebrow--accent">Next step</p>
+          <h2 class="f360-h1 f360-display">Tell us the building.</h2>
+        </div>
+        <div class="f360-close__side">
+          <p class="f360-promise">Send the location, roughly how many spaces, and any optional features you are considering. An itemised fixed quote comes back the same working day &mdash; free and non-binding.</p>
+          <p style="margin-top:var(--f360-s5)"><a class="f360-cta f360-cta--inverse" href="contact.html">Start a project <span class="f360-cta__arrow" aria-hidden="true">&rarr;</span></a></p>
+          <p style="margin-top:var(--f360-s4)"><a class="f360-textcta" href="work.html">See it delivered &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== footer.php — byte-identical on every page ===================== -->
+<footer class="f360-colophon">
+  <div class="f360-wrap">
+    <div class="f360-colophon__grid">
+      <div class="f360-colophon__brand">
+        <a class="f360-brand f360-brand--foot" href="index.html" aria-label="360Folio — home">
+          <img class="f360-brand__img f360-brand__img--light" src="assets/img/360folio-lockup.png" alt="360Folio — Experience The Reality" width="880" height="221" decoding="async">
+          <img class="f360-brand__img f360-brand__img--dark" src="assets/img/360folio-lockup-dark.png" alt="360Folio — Experience The Reality" width="880" height="221" decoding="async">
+        </a>
+        <p>Immersive media and creative technology since 2013. Panoramic capture, CGI, interactive software and the platforms that carry them &mdash; for museums, universities, hospitals and government bodies.</p>
+      </div>
+
+      <div class="f360-colophon__col">
+        <h2>Services</h2>
+        <ul class="f360-colophon__list">
+          <li><a href="virtual-reality.html">Virtual Reality</a></li>
+          <li><a href="vr-benefits.html">VR Benefits</a></li>
+          <li><a href="vr-features.html">VR Features</a></li>
+          <li><a href="vr-process.html">VR Process</a></li>
+          <li><a href="interactive-software.html">Interactive Software</a></li>
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="web-hosting.html">Web Hosting</a></li>
+        </ul>
+      </div>
+
+      <div class="f360-colophon__col">
+        <h2>Studio</h2>
+        <ul class="f360-colophon__list">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="f360-colophon__col f360-colophon__col--wide">
+        <h2>Offices</h2>
+        <ul class="f360-colophon__list">
+          <li><span>Karachi, PK</span> <a href="tel:+923333894668">+92 333 389 4668</a></li>
+          <li><span>Riyadh, SA</span> <a href="tel:+966530500757">+966 530 500 757</a></li>
+          <li><span>Dallas, US</span> <a href="tel:+14696501458">+1 469 650 1458</a></li>
+          <li><a href="mailto:info@360folio.com">info@360folio.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="f360-colophon__foot">
+      <p class="f360-imprint">&copy; <span data-year>2026</span> 360Folio &mdash; Experience The Reality</p>
+      <div class="f360-toolbar">
+        <button class="f360-toolbtn" type="button" data-grid-toggle aria-pressed="false">Show grid</button>
+        <button class="f360-toolbtn" type="button" data-theme-toggle aria-pressed="false"><span data-theme-label>Day edition</span></button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js?v=5"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>360Folio — three design directions</title>
+<style>
+  /* Deliberately plain. This page is scaffolding for comparing the three
+     directions, not a fourth design competing with them. */
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff; --panel: #f6f7f8; --ink: #16181c; --ink-2: #5c626b;
+    --line: #e2e5e9; --accent: #E63312;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d0e11; --panel:#15171b; --ink:#eceef1; --ink-2:#9ba2ac; --line:#24272d; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding: clamp(1.5rem, 5vw, 4rem);
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
+  h1 { font-size: clamp(1.5rem, 1rem + 2vw, 2.25rem); margin: 0 0 .5rem; letter-spacing: -.02em; }
+  .sub { color: var(--ink-2); max-width: 62ch; margin: 0; }
+  .grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); }
+  .card {
+    border: 1px solid var(--line); border-radius: 8px; background: var(--panel);
+    padding: 1.5rem; display: flex; flex-direction: column; gap: .9rem;
+  }
+  .card.win { border-color: var(--accent); }
+  .badge {
+    font: 600 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .badge b { color: var(--accent); }
+  h2 { font-size: 1.2rem; margin: 0; letter-spacing: -.01em; }
+  .desc { color: var(--ink-2); font-size: .92rem; margin: 0; flex: 1; }
+  .score { font: 700 2rem/1 ui-monospace, monospace; letter-spacing: -.03em; }
+  .score span { font-size: .85rem; font-weight: 400; color: var(--ink-2); }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1px; }
+  li a {
+    display: flex; justify-content: space-between; align-items: center; gap: .75rem;
+    padding: .6rem .75rem; text-decoration: none; color: var(--ink);
+    background: var(--bg); border: 1px solid var(--line); border-radius: 5px;
+    font-size: .92rem;
+  }
+  li a:hover { border-color: var(--accent); color: var(--accent); }
+  li a em { font-style: normal; font-size: .72rem; color: var(--ink-2); font-family: ui-monospace, monospace; }
+  li a:hover em { color: var(--accent); }
+  .note {
+    margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+    color: var(--ink-2); font-size: .9rem; max-width: 70ch;
+  }
+  .note a { color: var(--accent); }
+  .note p + p { margin-top: .8rem; }
+  kbd {
+    font: 500 .82rem ui-monospace, monospace; background: var(--panel);
+    border: 1px solid var(--line); border-radius: 4px; padding: .1rem .35rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>360Folio — three design directions</h1>
+  <p class="sub">Same content, same brief, three interpretations. Each has a home page, the
+  Virtual Reality page (the densest content problem on the site) and a contact page.
+  Every page carries one marked animation section whose scene is not yet specified.</p>
+  <p class="sub" style="margin-top:.8rem"><b>All three now switch between light and dark</b>
+  — six looks to choose from, not three. The control sits in the header of every page
+  (A calls it Night/Day, B calls it Night edition/Day edition, C calls it Dark/Light).
+  Each remembers your choice and follows your system setting until you override it.</p>
+</header>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="badge"><span>Direction A</span><span>57 / 85</span></div>
+    <h2>Cinematic</h2>
+    <div class="score">57<span> /85</span></div>
+    <p class="desc">Dark, staged, atmospheric — and now with a full day edition built on what was already its best idea: a &ldquo;paper&rdquo; palette that is simply the light values of the semantic tokens, so one attribute turns the whole site over. Weakest on dense content — it thinned the 33-feature spec down to 18.</p>
+    <ul>
+      <li><a href="direction-a-cinematic/index.html">Home <em>index</em></a></li>
+      <li><a href="direction-a-cinematic/virtual-reality.html">Virtual Reality <em>dense</em></a></li>
+      <li><a href="direction-a-cinematic/contact.html">Contact <em>form</em></a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="badge"><span>Direction B</span><span>67 / 85</span></div>
+    <h2>Editorial</h2>
+    <div class="score">67<span> /85</span></div>
+    <p class="desc">Serif, 12-column, numbered spreads — the most “designed” of the three and
+    the strongest craft score. Its sourced-figures panel refuses third-party statistics
+    outright, which is the correct replacement for the old site’s 2006-era numbers.</p>
+    <ul>
+      <li><a href="direction-b-editorial/index.html">Home <em>index</em></a></li>
+      <li><a href="direction-b-editorial/virtual-reality.html">Virtual Reality <em>dense</em></a></li>
+      <li><a href="direction-b-editorial/contact.html">Contact <em>form</em></a></li>
+    </ul>
+  </div>
+
+  <div class="card win">
+    <div class="badge"><span>Direction C</span><b>RECOMMENDED</b></div>
+    <h2>Technical</h2>
+    <div class="score">81<span> /85</span></div>
+    <p class="desc">A specification sheet: mono labels, crop marks, readout tables. The only
+    direction that solved the dense-content problem — all 33 features in a filterable
+    matrix with a standard/optional legend. Cold, but its buyers are procurement officers.</p>
+    <ul>
+      <li><a href="direction-c-technical/index.html">Home <em>index</em></a></li>
+      <li><a href="direction-c-technical/virtual-reality.html">Virtual Reality <em>dense</em></a></li>
+      <li><a href="direction-c-technical/contact.html">Contact <em>form</em></a></li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="note">
+  <p><b>Things to try while comparing.</b> Flip each one between light and dark before
+  judging it — several of these read very differently in the other edition, which is the
+  point of having the switch. Left alone, A and C open dark and B opens light, and all
+  three follow your system setting until you press the control. On the Virtual Reality
+  pages, C’s feature matrix has filter and expand-all controls; that section is the
+  direct comparison point between the three. Resize to phone width — all three hold
+  without horizontal scroll.</p>
+
+  <p><b>The animation sections</b> are marked placeholders, not built scenes. Each reserves
+  its final height so the real scene drops in without shifting the layout. Their specs
+  are the next conversation.</p>
+
+  <p>Full scoring and reasoning: <a href="VERDICT.md">VERDICT.md</a> ·
+  the brief the three worked from: <a href="BRIEF.md">BRIEF.md</a> ·
+  the rubric, written before any of them was reviewed: <a href="JUDGING.md">JUDGING.md</a></p>
+</div>
+
+</div>
+</body>
+</html>

@@ -139,8 +139,12 @@
         b.setAttribute('aria-pressed', b.getAttribute('data-f360-filter') === filter ? 'true' : 'false');
       });
       if (live) {
+        /* Read the label off the button rather than printing the raw slug, so
+           the status says "5 CGI Tour projects" and not "5 cgi projects". */
+        var btn = $('[data-f360-filter="' + filter + '"]', controls);
+        var label = btn ? btn.childNodes[0].textContent.trim() : filter;
         live.textContent = 'Showing ' + (filter === 'all' ? counts.all + ' ' + noun :
-          (counts[filter] || 0) + ' ' + filter + ' ' + noun);
+          (counts[filter] || 0) + ' ' + label + ' ' + noun);
       }
     }
 

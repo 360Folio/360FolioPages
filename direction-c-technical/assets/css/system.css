@@ -38,6 +38,11 @@ img, svg { max-width: 100%; display: block; }
 button, input, select, textarea { font: inherit; color: inherit; }
 table { border-collapse: collapse; border-spacing: 0; }
 summary::-webkit-details-marker { display: none; }
+/* The browser's own [hidden] rule is a bare attribute selector, so any
+   component that sets display on a class — .f360-card is display:flex —
+   silently outranks it and the element stays visible with hidden="true".
+   The filter sets .hidden on rows, so this has to win. */
+[hidden] { display: none !important; }
 
 /* -------------------------------------------------------------- 01 TOKENS */
 :root {

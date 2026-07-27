@@ -1,0 +1,463 @@
+[
+ {
+  "name": "Al-Masmak Museum",
+  "client": "Saudi Commission for Antiques & National Heritage",
+  "location": "Riyadh, Kingdom of Saudi Arabia",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "February 2016 - August 2016",
+  "about": "The Masmak (Arabic: Qaṣr al-Maṣmak قصر المصمك‎‎) is a clay and mud-brick fort, with four watchtowers and thick walls, founded on stone blocks, lying in the center of Riyadh, in the old quarters. This building played a major part in the kingdom's history, as it was here that the recapture of Riyadh, led by Ibn Saud, occurred on 14 January 1902.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Al Faisaliah Resort & Spa",
+  "client": "Al Faisaliah Resort & Spa",
+  "location": "Riyadh, Kingdom of Saudi Arabia",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "August 2016 - February 2017",
+  "about": "Virtual tour of Al Faisaliah Resort & Spa in Riyadh, Kingdom of Saudi Arabia.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Audat Sudair",
+  "client": "Saudi Commission for Antiques & National Heritage",
+  "location": "Riyadh, Kingdom of Saudi Arabia",
+  "software": "",
+  "service": "Virtual Tour & Gigapixel",
+  "dates": "October 2014 - August 2016",
+  "about": "Virtual tour of a historical heritage village at Audat Sudair in Ar-Riyadh region, about 100KM from the capital city of Riyadh in the Kingdom of Saudi Arabia.",
+  "tags": [
+   "tour",
+   "gigapixel"
+  ]
+ },
+ {
+  "name": "Habib University",
+  "client": "Habib University",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "March 2016 - January 2017",
+  "about": "Virtual tour of a world-class liberal-sciences educational institution, the Habib University in Karachi, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "3D-Rendered Bedroom",
+  "client": "360Folio Interactive",
+  "location": "",
+  "software": "Autodesk 3ds Max",
+  "service": "CGI Tour",
+  "dates": "June 2015 - August 2016",
+  "about": "CGI tour of a bedroom rendered in Autodesk 3ds Max.",
+  "tags": [
+   "cgi"
+  ]
+ },
+ {
+  "name": "Beach Villa",
+  "client": "360Folio Interactive",
+  "location": "",
+  "software": "Lumion",
+  "service": "CGI Tour",
+  "dates": "November 2015 - August 2016",
+  "about": "CGI tour of a beach villa rendered in Lumion.",
+  "tags": [
+   "cgi"
+  ]
+ },
+ {
+  "name": "3D-Rendered Living Room",
+  "client": "360Folio Interactive",
+  "location": "",
+  "software": "Autodesk 3ds Max",
+  "service": "CGI Tour",
+  "dates": "June 2015 - August 2016",
+  "about": "CGI tour of a living room rendered in Autodesk 3ds Max.",
+  "tags": [
+   "cgi"
+  ]
+ },
+ {
+  "name": "Illusionistic Dreamscape",
+  "client": "Aujala Naveed",
+  "location": "",
+  "software": "Lumion",
+  "service": "CGI Tour",
+  "dates": "June 2015 - August 2016",
+  "about": "CGI tour of a proposed entertainment hub at the Fortress Square in Lahore, Pakistan rendered in Lumion.",
+  "tags": [
+   "cgi"
+  ]
+ },
+ {
+  "name": "20 Sports Club",
+  "client": "Albwardi Engineering Consulting",
+  "location": "",
+  "software": "Lumion",
+  "service": "CGI Tour",
+  "dates": "August 2015 - August 2016",
+  "about": "CGI tour of proposed 20 sports clubs in the Kingdom of Saudi Arabia rendered in Lumion.",
+  "tags": [
+   "cgi"
+  ]
+ },
+ {
+  "name": "Albwardi Engineering Consulting",
+  "client": "Albwardi Engineering Consulting",
+  "location": "Riyadh, Kingdom of Saudi Arabia",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "November 2015 - August 2016",
+  "about": "Virtual tour of the head office of Albwardi Engineering Consulting in Riyadh, Kingdom of Saudi Arabia.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Anatomy Museum",
+  "client": "360Folio Interactive",
+  "location": "Jeddah, Kingdom of Saudi Arabia",
+  "software": "",
+  "service": "Virtual Tour & 360° Objects",
+  "dates": "April 2015 - August 2016",
+  "about": "Virtual tour of an anatomy museum at a university in Jeddah, Kingdom of Saudi Arabia.",
+  "tags": [
+   "tour",
+   "objects"
+  ]
+ },
+ {
+  "name": "Dr. Soliman Al-Kharashi Medical Center",
+  "client": "Dr. Soliman Al-Kharashi Medical Center",
+  "location": "Riyadh, Saudi Arabia",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "Match 2015 - January 2017",
+  "about": "Virtual tour of Dr. Soliman Al-Kharashi Medical Center in Riyadh, Kingdom of Saudi Arabia.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "King Fahad Medical City",
+  "client": "King Fahad Medical City",
+  "location": "Riyadh, Saudi Arabia",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "November 2014 - January 2017",
+  "about": "Virtual tour of the college of medicine at King Fahad Medical City in Riyadh, Saudi Arabia.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Saudi Post",
+  "client": "Saudi Post",
+  "location": "Riyadh, Saudi Arabia",
+  "software": "",
+  "service": "Virtual Tour & 360° Videos",
+  "dates": "March 2015 - January 2017",
+  "about": "Virtual tour of Saudi Post events at different locations in Saudi Arabia.",
+  "tags": [
+   "tour",
+   "video"
+  ]
+ },
+ {
+  "name": "Day Fresh - Dairlyland",
+  "client": "Dairlyland Private Limited",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "March 2016 - January 2017",
+  "about": "Virtual tour of Day Fresh farms at Dairlyland near Karachi, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "The Palace",
+  "client": "La Poshesh",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "December 2015 - January 2017",
+  "about": "Virtual tour of The Palace venue in Karachi, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Hamdard University",
+  "client": "Hamdard University",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "June 2015 - January 2017",
+  "about": "Virtual tour of Hamdard University in Karachi, Pakistan",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Indus Hospital",
+  "client": "Indus Hospital",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "June 2015 - January 2017",
+  "about": "Multi-lingual interactive documentary [virtual tour] of Indus Hospital, including its all campuses across, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Lok Mela Festival",
+  "client": "Lok Virsa Museum",
+  "location": "Islamabad, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "April 2015 - January 2017",
+  "about": "Virtual tour of Lok Mela Festival held in 2015 at Lok Virsa Museum, Islamabad, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Lok Virsa Museum",
+  "client": "Lok Virsa Museum",
+  "location": "Islamabad, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "January 2015 - January 2017",
+  "about": "Virtual tour of Lok Virsa Cultural Heritage Museum in Islamabad, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Karachi Eat Food Festival",
+  "client": "Karachi Eat Food Festival",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "January 2015 - January 2017",
+  "about": "Virtual tour of Karachi Eat Food Festival held in 2015 at the Frere Hall, Karachi, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Gulhane Decor",
+  "client": "Gulhane Decor",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour & 360° Objects",
+  "dates": "March 2015 - January 2017",
+  "about": "Virtual tour of the display center of Guhane Decor, a Turkish home decor store in Karachi, Pakistan.",
+  "tags": [
+   "tour",
+   "objects"
+  ]
+ },
+ {
+  "name": "Bahria Town School & College",
+  "client": "Bahria Town School & College",
+  "location": "Lahore, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "December 2014 - January 2017",
+  "about": "Virtual tour of Bahria Town School & College in Lahore, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Fatima Jinnah (F9) Park",
+  "client": "360Folio Interactive",
+  "location": "Islamabad, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "October 2014 - January 2017",
+  "about": "Virtual tour, including resolution comparison, of Fatima Jinnah (F9) Park in Islamabad, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "The Faisal Mosque",
+  "client": "Capital Development Authority",
+  "location": "Islamabad, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "January 2014 - January 2017",
+  "about": "Virtual tour of the Faisal Mosque, Pakistan's national mosque in Islamabad, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Pakistan Air Force Museum",
+  "client": "Pakistan Air Force Museum",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "February 2014 - January 2017",
+  "about": "Virtual tour of the world-renowned aviation museum, Pakistan Air Force (PAF) Museum in Karachi, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "The Quaid's Aircraft",
+  "client": "Pakistan Air Force Museum",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "February 2014 - January 2017",
+  "about": "Virtual tour of the aircraft of the founder of Pakistan, Quaid-e-Azam Muhammad Ali Jinnah, Vikers Viking 1B-J750, at Pakistan Air Force (PAF) Museum in Karachi, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "PAF Convention Center",
+  "client": "Pakistan Air Force Museum",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "July 2014 - January 2017",
+  "about": "Virtual tour of the aircraft of the founder of Pakistan, Quaid-e-Azam Muhammad Ali Jinnah, Vikers Viking 1B-J750, at Pakistan Air Force (PAF) Museum in Karachi, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Pakistan Model School",
+  "client": "City District Government Faisalabad",
+  "location": "Faisalabad, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "December 2013 - January 2017",
+  "about": "Virtual tour of Pakistan Model School (former Gurdwara) in Faisalabad, Pakistan",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Clock Tower & 8 Bazaars",
+  "client": "City District Government Faisalabad",
+  "location": "Faisalabad, Pakistan",
+  "software": "",
+  "service": "Virtual Tour & Gigapixel",
+  "dates": "December 2013 - January 2017",
+  "about": "Virtual tour of the historical Clock Tower & 8 Bazaars built in the imperial era in Faisalabad (former Lyallpur), Pakistan.",
+  "tags": [
+   "tour",
+   "gigapixel"
+  ]
+ },
+ {
+  "name": "Islamabad Gigapixel",
+  "client": "360Folio Interactive",
+  "location": "Islamabad, Pakistan",
+  "software": "",
+  "service": "Gigapixel",
+  "dates": "June 2013 - January 2017",
+  "about": "Pakistan's First Gigapixel Panorama of size about 3,100 megapixels (3.1 gigapixels) showing panoramic view of the capital city of Islamabad from Daman-e-Koh (Margalla Hills).",
+  "tags": [
+   "gigapixel"
+  ]
+ },
+ {
+  "name": "Suzuki Liana Sedan",
+  "client": "360Folio Interactive",
+  "location": "Islamabad, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "January 2014 - January 2017",
+  "about": "360-degree panoramic view of the interior of Suzuki Liana Sedan car.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Ceramic Kaftan",
+  "client": "Gulhane Decor",
+  "location": "Karachi, Pakistan",
+  "software": "",
+  "service": "360° Objects",
+  "dates": "March 2015 - January 2017",
+  "about": "360-degree product of Ceramic Kaftan from Guhane Decor, a Turkish home decor store in Karachi, Pakistan.",
+  "tags": [
+   "objects"
+  ]
+ },
+ {
+  "name": "Preserved Hand",
+  "client": "360Folio Interactive",
+  "location": "Jeddah, Kingdom of Saudi Arabia",
+  "software": "",
+  "service": "360° Objects",
+  "dates": "April 2015 - August 2016",
+  "about": "360-degree product of Preserved Hand from an anatomy museum at a university in Jeddah, Kingdom of Saudi Arabia.",
+  "tags": [
+   "objects"
+  ]
+ },
+ {
+  "name": "Lok Mela Festival Video",
+  "client": "Lok Virsa Museum",
+  "location": "Islamabad, Pakistan",
+  "software": "",
+  "service": "360° Videos",
+  "dates": "April 2015 - January 2017",
+  "about": "360° Video of Lok Mela Festival held in 2015 at Lok Virsa Museum, Islamabad, Pakistan.",
+  "tags": [
+   "video"
+  ]
+ },
+ {
+  "name": "Ibn-e-Sina Medical College",
+  "client": "Saudi Post",
+  "location": "Jeddah, Saudi Arabia",
+  "software": "",
+  "service": "360° Videos",
+  "dates": "March 2015 - January 2017",
+  "about": "360° Video of Saudi Post event at Ibn-e-Sina Medical College in Jeddah, Saudi Arabia.",
+  "tags": [
+   "video"
+  ]
+ },
+ {
+  "name": "Lyallpur Museum",
+  "client": "Lyallpur Museum",
+  "location": "Faisalabad, Pakistan",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "December 2013 - January 2017",
+  "about": "Virtual tour of Lyallpur Museum, a cultural and heritage museum of Sandalbar in Faisalabad, Pakistan.",
+  "tags": [
+   "tour"
+  ]
+ },
+ {
+  "name": "Arcadia City",
+  "client": "360Folio Interactive",
+  "location": "",
+  "software": "",
+  "service": "Virtual Tour",
+  "dates": "",
+  "about": "Archive entry — project details to be confirmed.",
+  "tags": [
+   "tour"
+  ]
+ }
+]

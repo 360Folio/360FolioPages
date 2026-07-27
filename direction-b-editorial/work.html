@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work — 360Folio</title>
+<meta name="description" content="The 360Folio archive: thirty-eight delivered projects across virtual tours, CGI, object photography, 360° film and gigapixel panoramas.">
+
+<link rel="stylesheet" href="assets/css/system.css?v=5">
+<script>
+/* Applies the stored edition before first paint. In WordPress this goes in
+   header.php above wp_head(). */
+(function(){try{var t=localStorage.getItem('f360-theme');if(t)document.documentElement.setAttribute('data-f360-theme',t);}catch(e){}}());
+</script>
+</head>
+<body>
+
+<div class="f360-gridproof" aria-hidden="true"><div class="f360-gridproof__inner"></div></div>
+
+<!-- ===================== header.php — byte-identical on every page ===================== -->
+<a class="f360-skip" href="#main">Skip to content</a>
+
+<header class="f360-masthead">
+  <div class="f360-masthead__colophon">
+    <div class="f360-wrap">
+      <span>Immersive Media &amp; Creative Technology Studio</span>
+      <span>Karachi &middot; Riyadh &middot; Dallas &mdash; since 2013</span>
+      <button class="f360-toolbtn f360-toolbtn--edition" type="button" data-theme-toggle aria-pressed="false"><span data-theme-label>Day edition</span></button>
+    </div>
+  </div>
+
+  <div class="f360-masthead__bar">
+    <div class="f360-wrap">
+      <a class="f360-brand" href="index.html" aria-label="360Folio — home">
+        <img class="f360-brand__img f360-brand__img--light" src="assets/img/360folio-logo.png" alt="360Folio" width="880" height="154" decoding="async">
+        <img class="f360-brand__img f360-brand__img--dark" src="assets/img/360folio-logo-dark.png" alt="360Folio" width="880" height="154" decoding="async">
+      </a>
+
+      <button class="f360-nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav">
+        <span data-nav-toggle-label>Menu</span>
+      </button>
+
+      <nav class="f360-nav" id="nav" data-nav data-open="false" aria-label="Primary">
+        <ul class="f360-nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li class="f360-nav__item--has-sub" data-open="false">
+            <a href="services.html">Services</a>
+            <ul class="f360-nav__sub">
+              <li><a href="services.html">All services</a></li>
+              <li><a href="virtual-reality.html">Virtual Reality</a></li>
+              <li><a href="vr-benefits.html">VR Benefits</a></li>
+              <li><a href="vr-features.html">VR Features</a></li>
+              <li><a href="vr-process.html">VR Process</a></li>
+              <li><a href="interactive-software.html">Interactive Software</a></li>
+              <li><a href="web-development.html">Web Development</a></li>
+              <li><a href="web-hosting.html">Web Hosting</a></li>
+            </ul>
+          </li>
+          <li><a href="work.html">Work</a></li>
+          <li class="f360-nav__item--has-sub" data-open="false">
+            <a href="about.html">Studio</a>
+            <ul class="f360-nav__sub">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="clients.html">Clients</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="f360-masthead__cta">
+        <a class="f360-cta" href="contact.html">Start a project <span class="f360-cta__arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="f360-runhead" data-runhead data-visible="false">
+    <div class="f360-wrap">
+      <span class="f360-runhead__num" data-runhead-num></span>
+      <span data-runhead-label></span>
+    </div>
+  </div>
+
+  <div class="f360-masthead__progress" data-progress></div>
+</header>
+
+<main class="f360-main" id="main">
+  <!-- ============ Page opener ============ -->
+  <section class="f360-pageopener" data-opener>
+    <div class="f360-wrap">
+      <div class="f360-pageopener__grid">
+        <div class="f360-pageopener__crumb">
+          <div class="f360-opener__kicker f360-eyebrow"><a class="f360-link" href="index.html">Home</a> &mdash; Work</div>
+        </div>
+
+        <h1 class="f360-pageopener__title f360-display">
+          <span data-opener-line>Thirty-eight</span>
+          <span data-opener-line><em class="f360-italic">places</em>, recorded.</span>
+        </h1>
+
+        <p class="f360-pageopener__lede f360-lede">Museums, hospitals, universities, festivals and government facilities &mdash; plus a capital city photographed at three billion pixels. Every entry below was delivered by this studio.</p>
+
+        <div class="f360-pageopener__meta">
+          <div class="f360-spec">
+            <div class="f360-spec__row"><span class="f360-spec__k">Archive</span><span class="f360-spec__v">Delivered projects</span><span class="f360-spec__n f360-num">38</span></div>
+            <div class="f360-spec__row"><span class="f360-spec__k">Virtual tours</span><span class="f360-spec__v">Spherical capture</span><span class="f360-spec__n f360-num">28</span></div>
+            <div class="f360-spec__row"><span class="f360-spec__k">CGI tours</span><span class="f360-spec__v">Built from CAD</span><span class="f360-spec__n f360-num">5</span></div>
+            <div class="f360-spec__row"><span class="f360-spec__k">Countries</span><span class="f360-spec__v">PK · KSA · USA</span><span class="f360-spec__n f360-num">03</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Animation slot ============
+       Opens the archive. A list of names proves volume; the plate proves the
+       quality that makes the volume worth anything. -->
+  <section class="f360-anim" id="anim-work" data-anim-slot="work" aria-label="Interactive animation">
+    <div class="f360-anim__stage">
+      <canvas class="f360-anim__canvas" data-anim-canvas hidden></canvas>
+      <div class="f360-anim__sweep" aria-hidden="true"></div>
+      <div class="f360-anim__placeholder" data-anim-placeholder>
+        <span class="f360-anim__eyebrow">Interactive animation slot</span>
+        <h2 class="f360-anim__title">Work &mdash; spec to be defined</h2>
+        <p class="f360-anim__note">Three.js / GSAP scene mounts to [data-anim-canvas]. Full-bleed, ~90vh, height reserved now so the canvas swap causes zero layout shift.</p>
+        <p class="f360-anim__meta">Opens the archive: the list proves how much we have shot, the plate proves how it looked.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 01 The archive ============ -->
+  <section class="f360-section" data-section-num="01" data-section-label="The archive">
+    <div class="f360-wrap">
+      <div class="f360-section__head" data-reveal data-reveal-group>
+        <p class="f360-section__num f360-num">01</p>
+        <h2 class="f360-section__title f360-h2">Every project, in order.</h2>
+        <div class="f360-section__aside">
+          <p class="f360-note">Virtual tours, CGI walkthroughs, object photography, live-action 360° film and gigapixel panoramas &mdash; each with the institution that commissioned it.</p>
+        </div>
+      </div>
+
+      <div class="f360-works" data-reveal data-reveal-group>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Al-Masmak Museum</h3>
+          <p class="f360-work__meta">Saudi Commission for Antiques &amp; National Heritage · Riyadh, Kingdom of Saudi Arabia · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Al Faisaliah Resort &amp; Spa</h3>
+          <p class="f360-work__meta">Al Faisaliah Resort &amp; Spa · Riyadh, Kingdom of Saudi Arabia · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Audat Sudair</h3>
+          <p class="f360-work__meta">Saudi Commission for Antiques &amp; National Heritage · Riyadh, Kingdom of Saudi Arabia · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Habib University</h3>
+          <p class="f360-work__meta">Habib University · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><rect x="52" y="34" width="96" height="82" fill="none" stroke="currentColor" stroke-width="0.8"></rect><path d="M52 75h96M100 34v82" stroke="currentColor" stroke-width="0.8"></path></svg>
+          </div>
+          <h3 class="f360-work__title">3D-Rendered Bedroom</h3>
+          <p class="f360-work__meta">360Folio Interactive · Autodesk 3ds Max · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><rect x="52" y="34" width="96" height="82" fill="none" stroke="currentColor" stroke-width="0.8"></rect><path d="M52 75h96M100 34v82" stroke="currentColor" stroke-width="0.8"></path></svg>
+          </div>
+          <h3 class="f360-work__title">Beach Villa</h3>
+          <p class="f360-work__meta">360Folio Interactive · Lumion · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><rect x="52" y="34" width="96" height="82" fill="none" stroke="currentColor" stroke-width="0.8"></rect><path d="M52 75h96M100 34v82" stroke="currentColor" stroke-width="0.8"></path></svg>
+          </div>
+          <h3 class="f360-work__title">3D-Rendered Living Room</h3>
+          <p class="f360-work__meta">360Folio Interactive · Autodesk 3ds Max · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><rect x="52" y="34" width="96" height="82" fill="none" stroke="currentColor" stroke-width="0.8"></rect><path d="M52 75h96M100 34v82" stroke="currentColor" stroke-width="0.8"></path></svg>
+          </div>
+          <h3 class="f360-work__title">Illusionistic Dreamscape</h3>
+          <p class="f360-work__meta">Aujala Naveed · Lumion · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><rect x="52" y="34" width="96" height="82" fill="none" stroke="currentColor" stroke-width="0.8"></rect><path d="M52 75h96M100 34v82" stroke="currentColor" stroke-width="0.8"></path></svg>
+          </div>
+          <h3 class="f360-work__title">20 Sports Club</h3>
+          <p class="f360-work__meta">Albwardi Engineering Consulting · Lumion · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Albwardi Engineering Consulting</h3>
+          <p class="f360-work__meta">Albwardi Engineering Consulting · Riyadh, Kingdom of Saudi Arabia · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Anatomy Museum</h3>
+          <p class="f360-work__meta">360Folio Interactive · Jeddah, Kingdom of Saudi Arabia · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Dr. Soliman Al-Kharashi Medical Center</h3>
+          <p class="f360-work__meta">Dr. Soliman Al-Kharashi Medical Center · Riyadh, Saudi Arabia · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">King Fahad Medical City</h3>
+          <p class="f360-work__meta">King Fahad Medical City · Riyadh, Saudi Arabia · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Saudi Post</h3>
+          <p class="f360-work__meta">Saudi Post · Riyadh, Saudi Arabia · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Day Fresh - Dairlyland</h3>
+          <p class="f360-work__meta">Dairlyland Private Limited · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">The Palace</h3>
+          <p class="f360-work__meta">La Poshesh · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Hamdard University</h3>
+          <p class="f360-work__meta">Hamdard University · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Indus Hospital</h3>
+          <p class="f360-work__meta">Indus Hospital · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Lok Mela Festival</h3>
+          <p class="f360-work__meta">Lok Virsa Museum · Islamabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Lok Virsa Museum</h3>
+          <p class="f360-work__meta">Lok Virsa Museum · Islamabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Karachi Eat Food Festival</h3>
+          <p class="f360-work__meta">Karachi Eat Food Festival · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Gulhane Decor</h3>
+          <p class="f360-work__meta">Gulhane Decor · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Bahria Town School &amp; College</h3>
+          <p class="f360-work__meta">Bahria Town School &amp; College · Lahore, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Fatima Jinnah (F9) Park</h3>
+          <p class="f360-work__meta">360Folio Interactive · Islamabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">The Faisal Mosque</h3>
+          <p class="f360-work__meta">Capital Development Authority · Islamabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Pakistan Air Force Museum</h3>
+          <p class="f360-work__meta">Pakistan Air Force Museum · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">The Quaid's Aircraft</h3>
+          <p class="f360-work__meta">Pakistan Air Force Museum · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">PAF Convention Center</h3>
+          <p class="f360-work__meta">Pakistan Air Force Museum · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Pakistan Model School</h3>
+          <p class="f360-work__meta">City District Government Faisalabad · Faisalabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Clock Tower &amp; 8 Bazaars</h3>
+          <p class="f360-work__meta">City District Government Faisalabad · Faisalabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><path d="M28 110l34-40 26 26 24-32 36 46z" fill="none" stroke="currentColor" stroke-width="0.8"></path><circle cx="140" cy="44" r="10" fill="none" stroke="currentColor" stroke-width="0.8"></circle></svg>
+          </div>
+          <h3 class="f360-work__title">Islamabad Gigapixel</h3>
+          <p class="f360-work__meta">360Folio Interactive · Islamabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Suzuki Liana Sedan</h3>
+          <p class="f360-work__meta">360Folio Interactive · Islamabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><ellipse cx="100" cy="102" rx="46" ry="14" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse><circle cx="100" cy="66" r="26" fill="none" stroke="currentColor" stroke-width="0.8"></circle></svg>
+          </div>
+          <h3 class="f360-work__title">Ceramic Kaftan</h3>
+          <p class="f360-work__meta">Gulhane Decor · Karachi, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><ellipse cx="100" cy="102" rx="46" ry="14" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse><circle cx="100" cy="66" r="26" fill="none" stroke="currentColor" stroke-width="0.8"></circle></svg>
+          </div>
+          <h3 class="f360-work__title">Preserved Hand</h3>
+          <p class="f360-work__meta">360Folio Interactive · Jeddah, Kingdom of Saudi Arabia · 2016</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="40" fill="none" stroke="currentColor" stroke-width="0.8"></circle><path d="M90 60l26 15-26 15z" fill="none" stroke="currentColor" stroke-width="0.8"></path></svg>
+          </div>
+          <h3 class="f360-work__title">Lok Mela Festival Video</h3>
+          <p class="f360-work__meta">Lok Virsa Museum · Islamabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="40" fill="none" stroke="currentColor" stroke-width="0.8"></circle><path d="M90 60l26 15-26 15z" fill="none" stroke="currentColor" stroke-width="0.8"></path></svg>
+          </div>
+          <h3 class="f360-work__title">Ibn-e-Sina Medical College</h3>
+          <p class="f360-work__meta">Saudi Post · Jeddah, Saudi Arabia · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Lyallpur Museum</h3>
+          <p class="f360-work__meta">Lyallpur Museum · Faisalabad, Pakistan · 2017</p>
+        </article>
+        <article class="f360-work" data-f360-repeat="project">
+          <div class="f360-plate__frame">
+            <svg class="f360-plate__art" viewBox="0 0 200 150" aria-hidden="true" focusable="false"><circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="0.8"></circle><ellipse cx="100" cy="75" rx="46" ry="16" fill="none" stroke="currentColor" stroke-width="0.8"></ellipse></svg>
+          </div>
+          <h3 class="f360-work__title">Arcadia City</h3>
+          <p class="f360-work__meta">360Folio Interactive</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Close ============ -->
+  <section class="f360-close">
+    <div class="f360-wrap">
+      <div class="f360-close__grid">
+        <div class="f360-close__title">
+          <p class="f360-eyebrow f360-eyebrow--accent">Next step</p>
+          <h2 class="f360-h1 f360-display">Yours could be the thirty-ninth.</h2>
+        </div>
+        <div class="f360-close__side">
+          <p class="f360-promise">Send the location and roughly how many spaces you want covered. A fixed, itemised quote comes back the same working day &mdash; free and non-binding.</p>
+          <p style="margin-top:var(--f360-s5)"><a class="f360-cta f360-cta--inverse" href="contact.html">Start a project <span class="f360-cta__arrow" aria-hidden="true">&rarr;</span></a></p>
+          <p style="margin-top:var(--f360-s4)"><a class="f360-textcta" href="virtual-reality.html">Virtual Reality &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== footer.php — byte-identical on every page ===================== -->
+<footer class="f360-colophon">
+  <div class="f360-wrap">
+    <div class="f360-colophon__grid">
+      <div class="f360-colophon__brand">
+        <a class="f360-brand f360-brand--foot" href="index.html" aria-label="360Folio — home">
+          <img class="f360-brand__img f360-brand__img--light" src="assets/img/360folio-lockup.png" alt="360Folio — Experience The Reality" width="880" height="221" decoding="async">
+          <img class="f360-brand__img f360-brand__img--dark" src="assets/img/360folio-lockup-dark.png" alt="360Folio — Experience The Reality" width="880" height="221" decoding="async">
+        </a>
+        <p>Immersive media and creative technology since 2013. Panoramic capture, CGI, interactive software and the platforms that carry them &mdash; for museums, universities, hospitals and government bodies.</p>
+      </div>
+
+      <div class="f360-colophon__col">
+        <h2>Services</h2>
+        <ul class="f360-colophon__list">
+          <li><a href="virtual-reality.html">Virtual Reality</a></li>
+          <li><a href="vr-benefits.html">VR Benefits</a></li>
+          <li><a href="vr-features.html">VR Features</a></li>
+          <li><a href="vr-process.html">VR Process</a></li>
+          <li><a href="interactive-software.html">Interactive Software</a></li>
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="web-hosting.html">Web Hosting</a></li>
+        </ul>
+      </div>
+
+      <div class="f360-colophon__col">
+        <h2>Studio</h2>
+        <ul class="f360-colophon__list">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="f360-colophon__col f360-colophon__col--wide">
+        <h2>Offices</h2>
+        <ul class="f360-colophon__list">
+          <li><span>Karachi, PK</span> <a href="tel:+923333894668">+92 333 389 4668</a></li>
+          <li><span>Riyadh, SA</span> <a href="tel:+966530500757">+966 530 500 757</a></li>
+          <li><span>Dallas, US</span> <a href="tel:+14696501458">+1 469 650 1458</a></li>
+          <li><a href="mailto:info@360folio.com">info@360folio.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="f360-colophon__foot">
+      <p class="f360-imprint">&copy; <span data-year>2026</span> 360Folio &mdash; Experience The Reality</p>
+      <div class="f360-toolbar">
+        <button class="f360-toolbtn" type="button" data-grid-toggle aria-pressed="false">Show grid</button>
+        <button class="f360-toolbtn" type="button" data-theme-toggle aria-pressed="false"><span data-theme-label>Day edition</span></button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js?v=5"></script>
+</body>
+</html>

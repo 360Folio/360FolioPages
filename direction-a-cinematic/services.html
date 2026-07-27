@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services — Five Practices | 360Folio</title>
+<meta name="description" content="Virtual Reality, Interactive Software, Web Development, Web Hosting and emerging AR and mobile work. Five practices, seven divisions, one production pipeline.">
+<link rel="stylesheet" href="assets/css/system.css?v=5">
+<script>
+/* Applies the stored edition before first paint, so a visitor who chose the
+   day edition never gets a flash of the dark room. In WordPress this goes in
+   header.php above wp_head(). */
+(function(){try{var t=localStorage.getItem('f360-theme');if(t)document.documentElement.setAttribute('data-f360-theme',t);}catch(e){}}());
+</script>
+</head>
+
+<body class="f360-body-services">
+
+<a class="f360-skip" href="#f360-main">Skip to content</a>
+
+<header class="f360-header" id="f360-header">
+  <div class="f360-header__inner">
+
+    <a class="f360-logo" href="index.html" aria-label="360Folio — home">
+      <img class="f360-logo__img f360-logo__img--light" src="assets/img/360folio-logo.png" alt="360Folio" width="880" height="154" decoding="async">
+      <img class="f360-logo__img f360-logo__img--dark" src="assets/img/360folio-logo-dark.png" alt="360Folio" width="880" height="154" decoding="async">
+    </a>
+
+    <button class="f360-navtoggle" type="button" data-f360-navtoggle aria-expanded="false" aria-controls="f360-nav">
+      <span class="f360-navtoggle__bars" aria-hidden="true"></span>
+      <span class="f360-sr">Menu</span>
+    </button>
+
+    <nav class="f360-nav" id="f360-nav" aria-label="Primary">
+      <ul class="f360-nav__list">
+        <li class="f360-nav__item"><a class="f360-nav__link" href="index.html">Home</a></li>
+        <li class="f360-nav__item f360-nav__item--has-sub">
+          <a class="f360-nav__link" href="services.html">Services</a>
+          <ul class="f360-nav__sub">
+            <li class="f360-nav__item"><a class="f360-nav__link" href="services.html">All services</a></li>
+            <li class="f360-nav__item"><a class="f360-nav__link" href="virtual-reality.html">Virtual Reality</a></li>
+            <li class="f360-nav__item"><a class="f360-nav__link" href="vr-benefits.html">VR Benefits</a></li>
+            <li class="f360-nav__item"><a class="f360-nav__link" href="vr-features.html">VR Features</a></li>
+            <li class="f360-nav__item"><a class="f360-nav__link" href="vr-process.html">VR Process</a></li>
+            <li class="f360-nav__item"><a class="f360-nav__link" href="interactive-software.html">Interactive Software</a></li>
+            <li class="f360-nav__item"><a class="f360-nav__link" href="web-development.html">Web Development</a></li>
+            <li class="f360-nav__item"><a class="f360-nav__link" href="web-hosting.html">Web Hosting</a></li>
+          </ul>
+        </li>
+        <li class="f360-nav__item"><a class="f360-nav__link" href="work.html">Work</a></li>
+        <li class="f360-nav__item f360-nav__item--has-sub">
+          <a class="f360-nav__link" href="about.html">Studio</a>
+          <ul class="f360-nav__sub">
+            <li class="f360-nav__item"><a class="f360-nav__link" href="about.html">About us</a></li>
+            <li class="f360-nav__item"><a class="f360-nav__link" href="clients.html">Clients</a></li>
+            <li class="f360-nav__item"><a class="f360-nav__link" href="careers.html">Careers</a></li>
+          </ul>
+        </li>
+        <li class="f360-nav__item"><a class="f360-nav__link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="f360-editionbtn" type="button" data-f360-edition aria-pressed="true">
+      <span class="f360-editionbtn__dot" aria-hidden="true"></span>
+      <span class="f360-editionbtn__label" data-f360-edition-label>Night</span>
+    </button>
+
+    <a class="f360-btn f360-btn--primary f360-header__cta" href="contact.html">Start a project</a>
+
+  </div>
+</header>
+<main class="f360-main" id="f360-main">
+
+  <!-- ======================================================= PAGE HERO -->
+  <section class="f360-pagehero">
+    <div class="f360-glow" aria-hidden="true"></div>
+    <div class="f360-container">
+      <nav class="f360-crumbs" aria-label="Breadcrumb">
+        <ol><li><a href="index.html">Home</a></li><li>Services</li></ol>
+      </nav>
+      <p class="f360-eyebrow">What we do</p>
+      <h1 class="f360-pagehero__title f360-display">Five practices. One pipeline.</h1>
+      <p class="f360-pagehero__lede f360-measure">Capture, post-production, interface and the platform it runs on all happen under the same roof. That is why website integration is included rather than subcontracted, and why the tour and the site it lives on have a single owner.</p>
+      <div class="f360-btns f360-mt-5">
+        <a class="f360-btn f360-btn--primary f360-btn--lg" href="contact.html">Start a project</a>
+        <a class="f360-btn f360-btn--ghost f360-btn--lg" href="#practices">See the practices</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= ANIMATION SLOT
+       Straight after the hero, before any of the five descriptions. This page
+       is a switchboard: its job is to get a visitor to the right practice, and
+       the scene should let them recognise their own problem before they have
+       read a word of copy. -->
+  <section class="f360-anim" id="anim-services" data-anim-slot="services" aria-label="Interactive animation">
+    <div class="f360-anim__stage">
+      <canvas class="f360-anim__canvas" data-anim-canvas hidden></canvas>
+      <div class="f360-anim__placeholder" data-anim-placeholder>
+        <span class="f360-anim__eyebrow">Interactive Animation Slot</span>
+        <h2 class="f360-anim__title">Services — spec to be defined</h2>
+        <p class="f360-anim__note">Three.js / GSAP scene mounts to [data-anim-canvas]. Full-bleed, ~90vh, height reserved so the canvas swap causes zero layout shift. Placed before the five descriptions: this page routes people, and the scene should let them recognise their own problem before they read anything.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= PRACTICES -->
+  <section class="f360-section" id="practices">
+    <div class="f360-container">
+      <div class="f360-head__row">
+        <div>
+          <p class="f360-eyebrow">The five</p>
+          <h2 class="f360-head__title f360-h2 f360-measure--tight">Most clients arrive for one and leave using two.</h2>
+        </div>
+        <div class="f360-head__aside">
+          <p class="f360-lede f360-measure--tight">The tour needs a site to live on. The site needs hosting. The exhibition needs a kiosk. Having all of it in one studio is the entire point.</p>
+        </div>
+      </div>
+
+      <div class="f360-grid f360-grid--2 f360-mt-6" data-f360-reveal data-f360-stagger>
+
+        <article class="f360-card" data-f360-repeat="feature">
+          <p class="f360-card__index">01 · Largest practice</p>
+          <h3 class="f360-card__title f360-h3">Virtual Reality</h3>
+          <p class="f360-card__body">Six capture formats — spherical tours, CGI walkthroughs built from CAD, turntable object photography, live-action 360° film, gigapixel panoramas and large-format imaging. All six arrive in one viewer, with one set of navigation, branding and access controls, and the whole 33-feature specification is published.</p>
+          <ul class="f360-card__list">
+            <li>60 MP floor</li><li>HDR always</li><li>WebXR</li><li>33 features</li>
+          </ul>
+          <p class="f360-card__foot"><a class="f360-link" href="virtual-reality.html">The full specification &rarr;</a></p>
+        </article>
+
+        <article class="f360-card" data-f360-repeat="feature">
+          <p class="f360-card__index">02</p>
+          <h3 class="f360-card__title f360-h3">Interactive Software</h3>
+          <p class="f360-card__body">Touch screens and touch tables give a stand, a lobby or a showroom the edge over the one beside it. Interactive audio-visual environments go further: a single media system that centrally controls, customises and updates content across unlimited screens in multiple venues.</p>
+          <ul class="f360-card__list">
+            <li>Touch tables</li><li>Kiosks</li><li>Media environments</li><li>Profiles</li>
+          </ul>
+          <p class="f360-card__foot"><a class="f360-link" href="interactive-software.html">Interactive Software &rarr;</a></p>
+        </article>
+
+        <article class="f360-card" data-f360-repeat="feature">
+          <p class="f360-card__index">03</p>
+          <h3 class="f360-card__title f360-h3">Web Development</h3>
+          <p class="f360-card__body">Clean code, fast sites and maximum client control. A modular approach means the site grows with the business instead of being rebuilt every three years, and every build carries post-development support. Beyond brochure sites: CRM, ERP, learning management, issue tracking and eleven other system types.</p>
+          <ul class="f360-card__list">
+            <li>3 plans</li><li>From 7 days</li><li>16 solutions</li><li>Maintenance</li>
+          </ul>
+          <p class="f360-card__foot"><a class="f360-link" href="web-development.html">Web Development &rarr;</a></p>
+        </article>
+
+        <article class="f360-card" data-f360-repeat="feature">
+          <p class="f360-card__index">04</p>
+          <h3 class="f360-card__title f360-h3">Web Hosting</h3>
+          <p class="f360-card__body">Domain registration and transfers, shared and semi-dedicated hosting, virtual private servers and SSL certificates — with our partner Hilal Host, home to more than 500,000 websites. It exists so that when something breaks at 2am there is one number to call, not three.</p>
+          <ul class="f360-card__list">
+            <li>Free tier up</li><li>VPS</li><li>Domains</li><li>6 SSL grades</li>
+          </ul>
+          <p class="f360-card__foot"><a class="f360-link" href="web-hosting.html">Web Hosting &rarr;</a></p>
+        </article>
+
+        <article class="f360-card" data-f360-repeat="feature">
+          <p class="f360-card__index">05 · Emerging</p>
+          <h3 class="f360-card__title f360-h3">Headsets, AR &amp; Mobile</h3>
+          <p class="f360-card__body">Headset deployment for events and exhibitions, augmented reality, and mobile applications built around the immersive content we produce. Separate divisions on the enquiry form, but in practice they attach to a capture project — a tour that also has to run on twenty headsets at a trade show.</p>
+          <ul class="f360-card__list">
+            <li>WebXR</li><li>AR</li><li>iOS</li><li>Android</li>
+          </ul>
+          <p class="f360-card__foot"><a class="f360-link" href="contact.html">Talk to us &rarr;</a></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= DIVISIONS -->
+  <section class="f360-section f360-section--tight f360-paper">
+    <div class="f360-container">
+      <div class="f360-head__row">
+        <div>
+          <p class="f360-eyebrow">Routing</p>
+          <h2 class="f360-head__title f360-h2 f360-measure--tight">Seven divisions, and which one answers you.</h2>
+        </div>
+        <div class="f360-head__aside">
+          <p class="f360-lede f360-measure--tight">The enquiry form routes on these. Choosing the right one shortens the reply; choosing the wrong one costs nothing, because a person reads it either way.</p>
+        </div>
+      </div>
+
+      <div class="f360-stack f360-mt-6">
+        <div class="f360-spec" data-f360-repeat="feature">
+          <p class="f360-spec__term">Virtual Reality</p>
+          <p class="f360-spec__def">Tours, CGI, object photography, 360° video, gigapixel and large-format. Documented in full on the <a class="f360-link" href="virtual-reality.html">Virtual Reality</a> page.</p>
+        </div>
+        <div class="f360-spec" data-f360-repeat="feature">
+          <p class="f360-spec__term">VR Headsets</p>
+          <p class="f360-spec__def">Headset deployment for events, exhibitions and showrooms. Quoted per project.</p>
+        </div>
+        <div class="f360-spec" data-f360-repeat="feature">
+          <p class="f360-spec__term">Augmented Reality</p>
+          <p class="f360-spec__def">AR overlays and applications built on captured content. Quoted per project.</p>
+        </div>
+        <div class="f360-spec" data-f360-repeat="feature">
+          <p class="f360-spec__term">Interactive Software</p>
+          <p class="f360-spec__def">Touch screens, touch tables, media environments and kiosk software. See <a class="f360-link" href="interactive-software.html">Interactive Software</a>.</p>
+        </div>
+        <div class="f360-spec" data-f360-repeat="feature">
+          <p class="f360-spec__term">Web Development</p>
+          <p class="f360-spec__def">Sites, web-based solutions, maintenance and upgrades. See <a class="f360-link" href="web-development.html">Web Development</a>.</p>
+        </div>
+        <div class="f360-spec" data-f360-repeat="feature">
+          <p class="f360-spec__term">Web Hosting</p>
+          <p class="f360-spec__def">Domains, shared, semi-dedicated, VPS and SSL. See <a class="f360-link" href="web-hosting.html">Web Hosting</a>.</p>
+        </div>
+        <div class="f360-spec" data-f360-repeat="feature">
+          <p class="f360-spec__term">Mobile Applications</p>
+          <p class="f360-spec__def">iOS and Android applications built around immersive content. Quoted per project.</p>
+        </div>
+      </div>
+
+      <!-- TODO confirm with the client: the pricing framing below is carried
+           over from the previous site and has not been re-verified. -->
+      <div class="f360-promise f360-mt-7">
+        <p class="f360-promise__text"><b>Where a price can be honestly listed, it is listed.</b> Hosting and web development publish fixed tiers. Capture work is quoted per project, because how many spaces and how far the crew travels change with every building.</p>
+        <a class="f360-btn f360-btn--ghost" href="contact.html">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= PROCESS -->
+  <section class="f360-section f360-section--tight">
+    <div class="f360-container">
+      <div class="f360-head__row">
+        <div>
+          <p class="f360-eyebrow">How work runs</p>
+          <h2 class="f360-head__title f360-h2 f360-measure--tight">The same seven steps, whichever practice you enter through.</h2>
+        </div>
+        <div class="f360-head__aside">
+          <p class="f360-lede f360-measure--tight">You approve a working prototype before anything is signed off, and nothing is chargeable until you agree the quote at step two.</p>
+        </div>
+      </div>
+
+      <ol class="f360-steps f360-mt-6" data-f360-reveal data-f360-stagger>
+        <li class="f360-step" data-f360-repeat="feature"><p class="f360-step__title f360-h3">Assessment</p><p class="f360-step__body">We visit the facility and work out what the project actually needs.</p></li>
+        <li class="f360-step" data-f360-repeat="feature"><p class="f360-step__title f360-h3">Concept</p><p class="f360-step__body">Our approach and idea, with financial and time estimates, in writing.</p></li>
+        <li class="f360-step" data-f360-repeat="feature"><p class="f360-step__title f360-h3">Production</p><p class="f360-step__body">On agreement the work begins — shoot, render or build, depending on the practice.</p></li>
+        <li class="f360-step" data-f360-repeat="feature"><p class="f360-step__title f360-h3">Post-production</p><p class="f360-step__body">Treatment, retouching, stitching and projection, then the interface build.</p></li>
+        <li class="f360-step" data-f360-repeat="feature"><p class="f360-step__title f360-h3">Beta release</p><p class="f360-step__body">A working prototype you can click through and criticise.</p></li>
+        <li class="f360-step" data-f360-repeat="feature"><p class="f360-step__title f360-h3">Your revisions</p><p class="f360-step__body">Design and UX changes go in before anything is signed off.</p></li>
+        <li class="f360-step" data-f360-repeat="feature"><p class="f360-step__title f360-h3">Final release</p><p class="f360-step__body">Integrated into your site, live, and yours.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ======================================================= CTA -->
+  <section class="f360-cta">
+    <div class="f360-glow f360-glow--low" aria-hidden="true"></div>
+    <div class="f360-container">
+      <h2 class="f360-cta__title f360-display">Not sure which one you need?</h2>
+      <p class="f360-lede f360-measure f360-mt-4">Say so. The enquiry form has a "not sure — please advise" option for exactly this. Describe the building and the audience; working out the right format is our job, and the assessment is free.</p>
+      <div class="f360-btns f360-mt-5">
+        <a class="f360-btn f360-btn--primary f360-btn--lg" href="contact.html">Start a project</a>
+        <a class="f360-btn f360-btn--ghost f360-btn--lg" href="work.html">See the work</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="f360-footer">
+  <div class="f360-container">
+    <div class="f360-footer__top">
+      <div>
+        <a class="f360-logo f360-logo--foot" href="index.html" aria-label="360Folio — home">
+          <img class="f360-logo__img f360-logo__img--light" src="assets/img/360folio-lockup.png" alt="360Folio — Experience The Reality" width="880" height="221" decoding="async">
+          <img class="f360-logo__img f360-logo__img--dark" src="assets/img/360folio-lockup-dark.png" alt="360Folio — Experience The Reality" width="880" height="221" decoding="async">
+        </a>
+        <p class="f360-footer__tag f360-mt-4">Immersive media and creative technology since 2013. Spherical capture, gigapixel imaging and the platforms that carry them.</p>
+        <p class="f360-mt-4"><a class="f360-btn f360-btn--primary" href="contact.html">Start a project</a></p>
+      </div>
+
+      <div>
+        <p class="f360-footer__ct f360-eyebrow f360-eyebrow--bare">Services</p>
+        <ul class="f360-footer__list">
+          <li><a href="virtual-reality.html">Virtual Reality</a></li>
+          <li><a href="vr-benefits.html">VR Benefits</a></li>
+          <li><a href="vr-features.html">VR Features</a></li>
+          <li><a href="vr-process.html">VR Process</a></li>
+          <li><a href="interactive-software.html">Interactive Software</a></li>
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="web-hosting.html">Web Hosting</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="f360-footer__ct f360-eyebrow f360-eyebrow--bare">Studio</p>
+        <ul class="f360-footer__list">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="f360-footer__divisions">
+        <p class="f360-footer__ct f360-eyebrow f360-eyebrow--bare">Offices</p>
+        <ul class="f360-footer__list">
+          <li><span>Karachi, PK</span> <a href="tel:+923333894668">+92 333 389 4668</a></li>
+          <li><span>Riyadh, SA</span> <a href="tel:+966530500757">+966 530 500 757</a></li>
+          <li><span>Dallas, US</span> <a href="tel:+14696501458">+1 469 650 1458</a></li>
+          <li><a href="mailto:info@360folio.com">info@360folio.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="f360-footer__strip">
+      <p class="f360-footer__legal">&copy; <span data-f360-year>2026</span> 360Folio · All rights reserved</p>
+      <p class="f360-footer__legal">Experience The Reality</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js?v=5"></script>
+</body>
+</html>

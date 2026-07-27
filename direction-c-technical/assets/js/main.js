@@ -106,10 +106,15 @@
     var controls = $('[data-f360-matrix-controls="' + scope + '"]');
     if (!controls) return;
 
-    var counts = { all: rows.length, standard: 0, optional: 0 };
+    /* Tiers are whatever the markup declares — standard/optional on the
+       feature matrix, service types on the work archive. A row may carry
+       several, space-separated. */
+    var noun = matrix.getAttribute('data-f360-matrix-noun') || 'features';
+    var counts = { all: rows.length };
     rows.forEach(function (r) {
-      var t = r.getAttribute('data-tier');
-      if (counts[t] !== undefined) counts[t] += 1;
+      (r.getAttribute('data-tier') || '').split(/\s+/).forEach(function (t) {
+        if (t) counts[t] = (counts[t] || 0) + 1;
+      });
     });
 
     $$('[data-f360-count]', controls).forEach(function (el) {
@@ -121,7 +126,8 @@
 
     function apply(filter) {
       rows.forEach(function (r) {
-        r.hidden = !(filter === 'all' || r.getAttribute('data-tier') === filter);
+        var tiers = ' ' + (r.getAttribute('data-tier') || '') + ' ';
+        r.hidden = !(filter === 'all' || tiers.indexOf(' ' + filter + ' ') > -1);
       });
       groups.forEach(function (g) {
         var visible = $$('[data-tier]', g).filter(function (r) { return !r.hidden; });
@@ -133,8 +139,8 @@
         b.setAttribute('aria-pressed', b.getAttribute('data-f360-filter') === filter ? 'true' : 'false');
       });
       if (live) {
-        live.textContent = 'Showing ' + (filter === 'all' ? counts.all + ' features' :
-          counts[filter] + ' ' + filter + ' features');
+        live.textContent = 'Showing ' + (filter === 'all' ? counts.all + ' ' + noun :
+          (counts[filter] || 0) + ' ' + filter + ' ' + noun);
       }
     }
 

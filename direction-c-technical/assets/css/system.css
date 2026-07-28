@@ -1480,14 +1480,24 @@ a { color: inherit; }
   border-top: 1px solid var(--f360-line);
 }
 
+/* Deliberately NOT a grid. Each item is "<b>Label</b> — description", so the
+   description is a bare text node; in a two-column grid it becomes an
+   anonymous grid item and auto-places into the 18px marker column, which
+   wraps the sentence one word per line. Flowing text with an absolutely
+   positioned marker is immune to that however the content is authored. */
 .f360-checks li {
-  display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: var(--f360-s2);
+  position: relative;
+  padding: 7px 0 7px 18px;
   font-size: var(--f360-t-xs); color: var(--f360-ink-2);
-  padding: 7px 0; border-bottom: 1px solid var(--f360-line);
+  line-height: 1.65;
+  border-bottom: 1px solid var(--f360-line);
 }
+.f360-checks li:last-child { border-bottom: 0; }
 .f360-checks li::before {
   content: "";
-  width: 9px; height: 9px; margin-top: 6px;
+  position: absolute;
+  left: 0; top: 13px;
+  width: 9px; height: 9px;
   background: var(--f360-accent);
   border-radius: 1px;
 }

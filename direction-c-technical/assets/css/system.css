@@ -1592,3 +1592,120 @@ html { scroll-behavior: smooth; scroll-padding-top: calc(var(--f360-head-h) + 84
   :root:not([data-f360-scheme="dark"]) .f360-brand__img--dark  { display: none; }
 }
 @media (max-width: 640px) { .f360-brand__img { height: 26px; } }
+
+/* ------------------------------------------- 23 FORMAT ROWS + MICRO-ART
+   The six capture formats, as alternating figure/description rows.
+
+   The side the artwork sits on is set by an explicit --flip modifier and
+   never by :nth-child — in WordPress these come out of a loop, and
+   index-based styling breaks the moment an editor reorders or deletes one.
+
+   The motion here is ambient. It is deliberately NOT the page's animation
+   slot: no canvas, no Three.js, a few hundred bytes of CSS, and it stops
+   dead under prefers-reduced-motion. */
+.f360-fmts {
+  display: grid;
+  gap: 1px;
+  background: var(--f360-line);
+  border: 1px solid var(--f360-line);
+  border-radius: var(--f360-radius);
+  overflow: hidden;
+}
+.f360-fmt {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
+  gap: var(--f360-s6);
+  align-items: center;
+  padding: var(--f360-s6);
+  background: var(--f360-surf);
+}
+.f360-fmt__body { grid-column: 1; grid-row: 1; }
+.f360-fmt__art  { grid-column: 2; grid-row: 1; }
+.f360-fmt--flip { grid-template-columns: minmax(0, 320px) minmax(0, 1fr); }
+.f360-fmt--flip .f360-fmt__body { grid-column: 2; }
+.f360-fmt--flip .f360-fmt__art  { grid-column: 1; }
+
+.f360-fmt__hd {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--f360-s3);
+  font-family: var(--f360-mono); font-size: var(--f360-t-3xs);
+  letter-spacing: .1em; text-transform: uppercase; color: var(--f360-ink-3);
+  padding-bottom: var(--f360-s3);
+  border-bottom: 1px solid var(--f360-line);
+  margin-bottom: var(--f360-s4);
+}
+.f360-fmt__hd b { color: var(--f360-accent); font-weight: 500; }
+.f360-fmt__title { font-size: var(--f360-t-2xl); }
+.f360-fmt__body > p {
+  margin-top: var(--f360-s3);
+  font-size: var(--f360-t-xs); color: var(--f360-ink-2); line-height: 1.7;
+  max-width: 62ch;
+}
+
+/* the art panel */
+.f360-fmt__art {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--f360-line);
+  border-radius: var(--f360-radius);
+  background: var(--f360-bg-2);
+  display: grid; place-items: center;
+  overflow: hidden;
+}
+.f360-fmt__art svg {
+  width: 76%; height: 76%;
+  color: var(--f360-ink-3);
+  overflow: visible;
+}
+.f360-fmt__art [stroke] { vector-effect: non-scaling-stroke; }
+.f360-fmt__cap {
+  position: absolute; left: 11px; bottom: 9px;
+  font-family: var(--f360-mono); font-size: var(--f360-t-3xs);
+  letter-spacing: .1em; text-transform: uppercase; color: var(--f360-ink-3);
+}
+.f360-acc-stroke { color: var(--f360-accent); }
+
+@media (max-width: 860px) {
+  .f360-fmt, .f360-fmt--flip { grid-template-columns: 1fr; gap: var(--f360-s5); }
+  .f360-fmt__body, .f360-fmt--flip .f360-fmt__body { grid-column: 1; grid-row: 2; }
+  .f360-fmt__art,  .f360-fmt--flip .f360-fmt__art  { grid-column: 1; grid-row: 1; max-width: 320px; }
+}
+
+/* ---- micro-animations, one per format --------------------------------- */
+.f360-fmt__art [class*="f360-a-"] { transform-box: fill-box; transform-origin: center; }
+
+@keyframes f360-a-rot    { to   { transform: rotate(360deg); } }
+@keyframes f360-a-pan    { 0%, 100% { transform: rotate(-27deg); } 50% { transform: rotate(27deg); } }
+@keyframes f360-a-draw   { 0% { stroke-dashoffset: 340; } 50%, 100% { stroke-dashoffset: 0; } }
+@keyframes f360-a-turn   { 0%, 100% { transform: scaleX(1); } 50% { transform: scaleX(.2); } }
+@keyframes f360-a-play   { 0% { stroke-dashoffset: 300; } 85%, 100% { stroke-dashoffset: 0; } }
+@keyframes f360-a-zoom   { 0% { transform: scale(.3); opacity: 0; } 16% { opacity: 1; } 100% { transform: scale(2.1); opacity: 0; } }
+@keyframes f360-a-tile   { 0%, 10% { opacity: .1; } 28%, 100% { opacity: 1; } }
+@keyframes f360-a-drift  { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(3px); } }
+
+/* 01 tours — the sphere turns, a viewport arc pans across it */
+.f360-a-orbit { animation: f360-a-rot 18s linear infinite; }
+.f360-a-view  { animation: f360-a-pan 5.5s ease-in-out infinite; }
+/* 02 CGI — the wireframe redraws itself edge by edge */
+.f360-a-draw  { stroke-dasharray: 340; animation: f360-a-draw 6s ease-in-out infinite; }
+.f360-a-draw:nth-of-type(2) { animation-delay: .35s; }
+.f360-a-draw:nth-of-type(3) { animation-delay: .7s; }
+/* 03 objects — the object rotates on its turntable */
+.f360-a-turn  { animation: f360-a-turn 6s ease-in-out infinite; }
+/* 04 video — the progress ring fills */
+.f360-a-play  { stroke-dasharray: 300; animation: f360-a-play 7s ease-in-out infinite; }
+/* 05 gigapixel — frames zoom outward without end */
+.f360-a-zoom  { animation: f360-a-zoom 6s ease-in-out infinite; }
+.f360-a-zoom:nth-of-type(2) { animation-delay: 2s; }
+.f360-a-zoom:nth-of-type(3) { animation-delay: 4s; }
+/* 06 large-format — the mosaic stitches together tile by tile */
+.f360-a-tile  { animation: f360-a-tile 7s ease-in-out infinite; }
+.f360-a-tile:nth-of-type(2) { animation-delay: .5s; }
+.f360-a-tile:nth-of-type(3) { animation-delay: 1s; }
+.f360-a-tile:nth-of-type(4) { animation-delay: 1.5s; }
+.f360-a-tile:nth-of-type(5) { animation-delay: 2s; }
+.f360-a-tile:nth-of-type(6) { animation-delay: 2.5s; }
+.f360-a-drift { animation: f360-a-drift 7s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .f360-fmt__art [class*="f360-a-"] { animation: none !important; stroke-dashoffset: 0 !important; }
+}

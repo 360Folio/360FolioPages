@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Virtual Reality — Specification &amp; Feature Matrix | 360Folio</title>
 <meta name="description" content="Six capture formats, 33 published features split into standard and optional, a 60 megapixel resolution floor and HDR on every frame. The full 360Folio virtual reality specification.">
-<link rel="stylesheet" href="assets/css/system.css?v=8">
+<link rel="stylesheet" href="assets/css/system.css?v=9">
 <script>
 /* Applies the stored colour scheme before first paint. Kept inline and tiny
    on purpose — in WordPress this goes in header.php above wp_head(). */
@@ -152,90 +152,152 @@
         </div>
       </div>
 
-      <div class="f360-grid f360-grid--2 f360-reveal">
-        <article class="f360-card" data-f360-repeat="feature">
-          <p class="f360-card__idx"><span>Format 01</span><b>MOST ORDERED</b></p>
-          <h3 class="f360-card__title">360° Virtual Tours</h3>
-          <div class="f360-card__body">
+      <!-- Each row is one self-contained unit. The artwork side is set by the
+           --flip modifier, never by :nth-child, so a WordPress loop can emit
+           these in any order without the alternation breaking. -->
+      <div class="f360-fmts f360-reveal">
+
+        <article class="f360-fmt" data-f360-repeat="feature">
+          <div class="f360-fmt__body">
+            <p class="f360-fmt__hd"><span>Format 01</span><b>MOST ORDERED</b></p>
+            <h3 class="f360-fmt__title">360° Virtual Tours</h3>
             <p>Virtual tours let a client do more than view your location — they let them experience it. Want to know more about the architecture? Click a hotspot. Want to see where this room sits in the building? Open the floor plan.</p>
             <p>Every tour is custom-built to fit the client's branding and website as a whole. We can work from full brand guidelines or simply from the current look and feel of your pages.</p>
+            <dl class="f360-specs">
+              <div class="f360-specs__row"><dt>Coverage</dt><dd>360° × 180° spherical</dd></div>
+              <div class="f360-specs__row"><dt>Navigation</dt><dd>Hotspots, floor plans, maps</dd></div>
+              <div class="f360-specs__row"><dt>Typical use</dt><dd>Campuses, hospitals, hotels</dd></div>
+            </dl>
           </div>
-          <dl class="f360-specs">
-            <div class="f360-specs__row"><dt>Coverage</dt><dd>360° × 180° spherical</dd></div>
-            <div class="f360-specs__row"><dt>Navigation</dt><dd>Hotspots, floor plans, maps</dd></div>
-            <div class="f360-specs__row"><dt>Typical use</dt><dd>Campuses, hospitals, hotels</dd></div>
-          </dl>
+          <figure class="f360-fmt__art f360-crop">
+            <svg viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+              <circle cx="100" cy="75" r="52" fill="none" stroke="currentColor" stroke-width="1" opacity=".55"></circle>
+              <ellipse class="f360-a-orbit" cx="100" cy="75" rx="52" ry="17" fill="none" stroke="currentColor" stroke-width="1" opacity=".8"></ellipse>
+              <path class="f360-a-view f360-acc-stroke" d="M100 75 L66 46 A44 44 0 0 1 134 46 Z" fill="none" stroke="currentColor" stroke-width="1.2"></path>
+              <circle class="f360-acc-stroke" cx="100" cy="75" r="2.6" fill="currentColor"></circle>
+            </svg>
+            <figcaption class="f360-fmt__cap">Fig. 01 — field of view</figcaption>
+          </figure>
         </article>
 
-        <article class="f360-card" data-f360-repeat="feature">
-          <p class="f360-card__idx"><span>Format 02</span><b>BEFORE IT EXISTS</b></p>
-          <h3 class="f360-card__title">CGI Virtual Tours</h3>
-          <div class="f360-card__body">
+        <article class="f360-fmt f360-fmt--flip" data-f360-repeat="feature">
+          <div class="f360-fmt__body">
+            <p class="f360-fmt__hd"><span>Format 02</span><b>BEFORE IT EXISTS</b></p>
+            <h3 class="f360-fmt__title">CGI Virtual Tours</h3>
             <p>We are at the forefront of both computer-generated imagery and 360° tours, so we combined them. You can visualise and experience a property before a single brick has been laid.</p>
             <p>We work from CAD files and a detailed build specification, so the finished tour looks and feels as true to life as the completed building. Useful for selling off plan, and for the capital conversations that make a project real.</p>
+            <dl class="f360-specs">
+              <div class="f360-specs__row"><dt>Input</dt><dd>CAD files + build spec</dd></div>
+              <div class="f360-specs__row"><dt>Rendered in</dt><dd>Autodesk 3ds Max · Lumion</dd></div>
+              <div class="f360-specs__row"><dt>Typical use</dt><dd>Off-plan sales, investment</dd></div>
+            </dl>
           </div>
-          <dl class="f360-specs">
-            <div class="f360-specs__row"><dt>Input</dt><dd>CAD files + build spec</dd></div>
-            <div class="f360-specs__row"><dt>Rendered in</dt><dd>Autodesk 3ds Max · Lumion</dd></div>
-            <div class="f360-specs__row"><dt>Typical use</dt><dd>Off-plan sales, investment</dd></div>
-          </dl>
+          <figure class="f360-fmt__art f360-crop">
+            <svg viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+              <g class="f360-a-drift">
+                <path class="f360-a-draw" d="M56 48 h74 v62 h-74 z" fill="none" stroke="currentColor" stroke-width="1"></path>
+                <path class="f360-a-draw" d="M56 48 l20-16 h74 l-20 16" fill="none" stroke="currentColor" stroke-width="1"></path>
+                <path class="f360-a-draw f360-acc-stroke" d="M130 48 l20-16 v62 l-20 16" fill="none" stroke="currentColor" stroke-width="1"></path>
+              </g>
+            </svg>
+            <figcaption class="f360-fmt__cap">Fig. 02 — built from CAD</figcaption>
+          </figure>
         </article>
 
-        <article class="f360-card" data-f360-repeat="feature">
-          <p class="f360-card__idx"><span>Format 03</span></p>
-          <h3 class="f360-card__title">360° Objects</h3>
-          <div class="f360-card__body">
+        <article class="f360-fmt" data-f360-repeat="feature">
+          <div class="f360-fmt__body">
+            <p class="f360-fmt__hd"><span>Format 03</span></p>
+            <h3 class="f360-fmt__title">360° Objects</h3>
             <p>Object photography is the most truthful way to show a product online. Anything from jewellery up to cars is placed on a turntable and photographed in sequence, so the viewer can spin it themselves.</p>
             <p>Hotspots can be captured too, letting users click into particular areas of detail.</p>
+            <dl class="f360-specs">
+              <div class="f360-specs__row"><dt>Subject size</dt><dd>Jewellery → vehicles</dd></div>
+              <div class="f360-specs__row"><dt>Method</dt><dd>Sequenced turntable</dd></div>
+              <div class="f360-specs__row"><dt>Delivered</dt><dd>Ceramic Kaftan · Preserved Hand</dd></div>
+            </dl>
           </div>
-          <dl class="f360-specs">
-            <div class="f360-specs__row"><dt>Subject size</dt><dd>Jewellery → vehicles</dd></div>
-            <div class="f360-specs__row"><dt>Method</dt><dd>Sequenced turntable</dd></div>
-            <div class="f360-specs__row"><dt>Delivered</dt><dd>Ceramic Kaftan · Preserved Hand</dd></div>
-          </dl>
+          <figure class="f360-fmt__art f360-crop">
+            <svg viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+              <ellipse cx="100" cy="114" rx="52" ry="13" fill="none" stroke="currentColor" stroke-width="1" opacity=".55"></ellipse>
+              <g class="f360-a-turn">
+                <rect class="f360-acc-stroke" x="78" y="48" width="44" height="56" rx="3" fill="none" stroke="currentColor" stroke-width="1.2"></rect>
+                <path d="M78 70 h44" stroke="currentColor" stroke-width="1" opacity=".7"></path>
+              </g>
+            </svg>
+            <figcaption class="f360-fmt__cap">Fig. 03 — turntable sequence</figcaption>
+          </figure>
         </article>
 
-        <article class="f360-card" data-f360-repeat="feature">
-          <p class="f360-card__idx"><span>Format 04</span></p>
-          <h3 class="f360-card__title">360° Videos</h3>
-          <div class="f360-card__body">
+        <article class="f360-fmt f360-fmt--flip" data-f360-repeat="feature">
+          <div class="f360-fmt__body">
+            <p class="f360-fmt__hd"><span>Format 04</span></p>
+            <h3 class="f360-fmt__title">360° Videos</h3>
             <p>Also called VR video or live-action VR. It places viewers inside the world of a film and lets them look anywhere in it, which is a different discipline from shooting flat footage.</p>
             <p>As 360 filmmakers we have effectively rewritten the rulebook — new tools, new blocking, nowhere for the crew to hide. That iterative process is why we can solve unusual shoots quickly.</p>
+            <dl class="f360-specs">
+              <div class="f360-specs__row"><dt>Also called</dt><dd>VR video, live-action VR</dd></div>
+              <div class="f360-specs__row"><dt>Best for</dt><dd>Events, process, training</dd></div>
+              <div class="f360-specs__row"><dt>Delivered</dt><dd>Lok Mela · Saudi Post events</dd></div>
+            </dl>
           </div>
-          <dl class="f360-specs">
-            <div class="f360-specs__row"><dt>Also called</dt><dd>VR video, live-action VR</dd></div>
-            <div class="f360-specs__row"><dt>Best for</dt><dd>Events, process, training</dd></div>
-            <div class="f360-specs__row"><dt>Delivered</dt><dd>Lok Mela · Saudi Post events</dd></div>
-          </dl>
+          <figure class="f360-fmt__art f360-crop">
+            <svg viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+              <circle cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="1" opacity=".35"></circle>
+              <circle class="f360-a-play f360-acc-stroke" cx="100" cy="75" r="46" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(-90 100 75)"></circle>
+              <path d="M91 61 l25 14 -25 14 z" fill="none" stroke="currentColor" stroke-width="1" opacity=".8"></path>
+            </svg>
+            <figcaption class="f360-fmt__cap">Fig. 04 — live-action VR</figcaption>
+          </figure>
         </article>
 
-        <article class="f360-card" data-f360-repeat="feature">
-          <p class="f360-card__idx"><span>Format 05</span><b>3.1 GP RECORD</b></p>
-          <h3 class="f360-card__title">Gigapixel Panoramas</h3>
-          <div class="f360-card__body">
+        <article class="f360-fmt" data-f360-repeat="feature">
+          <div class="f360-fmt__body">
+            <p class="f360-fmt__hd"><span>Format 05</span><b>3.1 GP RECORD</b></p>
+            <h3 class="f360-fmt__title">Gigapixel Panoramas</h3>
             <p>Giant photographs built from hundreds or thousands of individual images stitched together. The resolution can be so great that you zoom in and see detail you could not have resolved with the naked eye standing in the same spot.</p>
             <p>Our largest is a 3,100 megapixel view of Islamabad from Daman-e-Koh in the Margalla Hills — Pakistan's first gigapixel panorama.</p>
+            <dl class="f360-specs">
+              <div class="f360-specs__row"><dt>Scale</dt><dd>Hundreds → thousands of frames</dd></div>
+              <div class="f360-specs__row"><dt>Largest</dt><dd>3,100 MP · Islamabad</dd></div>
+              <div class="f360-specs__row"><dt>Loading</dt><dd>Multi-resolution tiles</dd></div>
+            </dl>
           </div>
-          <dl class="f360-specs">
-            <div class="f360-specs__row"><dt>Scale</dt><dd>Hundreds → thousands of frames</dd></div>
-            <div class="f360-specs__row"><dt>Largest</dt><dd>3,100 MP · Islamabad</dd></div>
-            <div class="f360-specs__row"><dt>Loading</dt><dd>Multi-resolution tiles</dd></div>
-          </dl>
+          <figure class="f360-fmt__art f360-crop">
+            <svg viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+              <rect x="42" y="30" width="116" height="90" fill="none" stroke="currentColor" stroke-width="1" opacity=".3"></rect>
+              <rect class="f360-a-zoom" x="76" y="58" width="48" height="34" fill="none" stroke="currentColor" stroke-width="1"></rect>
+              <rect class="f360-a-zoom" x="76" y="58" width="48" height="34" fill="none" stroke="currentColor" stroke-width="1"></rect>
+              <rect class="f360-a-zoom f360-acc-stroke" x="76" y="58" width="48" height="34" fill="none" stroke="currentColor" stroke-width="1.2"></rect>
+            </svg>
+            <figcaption class="f360-fmt__cap">Fig. 05 — endless zoom</figcaption>
+          </figure>
         </article>
 
-        <article class="f360-card" data-f360-repeat="feature">
-          <p class="f360-card__idx"><span>Format 06</span></p>
-          <h3 class="f360-card__title">Large-Format Imaging</h3>
-          <div class="f360-card__body">
+        <article class="f360-fmt f360-fmt--flip" data-f360-repeat="feature">
+          <div class="f360-fmt__body">
+            <p class="f360-fmt__hd"><span>Format 06</span></p>
+            <h3 class="f360-fmt__title">Large-Format Imaging</h3>
             <p>Multi-resolution imagery of almost anything — works of art, which is vital for restorers and collectors, façades for architects, or any subject needing detail beyond what a single camera can hold.</p>
             <p>Achieved through close telephoto work combined with mosaic stitching, letting the viewer zoom to within half a degree of field.</p>
+            <dl class="f360-specs">
+              <div class="f360-specs__row"><dt>Subjects</dt><dd>Artwork, façades, drawings</dd></div>
+              <div class="f360-specs__row"><dt>Method</dt><dd>Telephoto mosaic stitching</dd></div>
+              <div class="f360-specs__row"><dt>Zoom depth</dt><dd>To ½° field of view</dd></div>
+            </dl>
           </div>
-          <dl class="f360-specs">
-            <div class="f360-specs__row"><dt>Subjects</dt><dd>Artwork, façades, drawings</dd></div>
-            <div class="f360-specs__row"><dt>Method</dt><dd>Telephoto mosaic stitching</dd></div>
-            <div class="f360-specs__row"><dt>Zoom depth</dt><dd>To ½° field of view</dd></div>
-          </dl>
+          <figure class="f360-fmt__art f360-crop">
+            <svg viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+              <rect class="f360-a-tile" x="42" y="30" width="37" height="42" fill="currentColor" stroke="currentColor" stroke-width="1" fill-opacity=".07"></rect>
+              <rect class="f360-a-tile" x="81" y="30" width="37" height="42" fill="currentColor" stroke="currentColor" stroke-width="1" fill-opacity=".07"></rect>
+              <rect class="f360-a-tile f360-acc-stroke" x="120" y="30" width="37" height="42" fill="currentColor" stroke="currentColor" stroke-width="1" fill-opacity=".07"></rect>
+              <rect class="f360-a-tile" x="42" y="74" width="37" height="42" fill="currentColor" stroke="currentColor" stroke-width="1" fill-opacity=".07"></rect>
+              <rect class="f360-a-tile f360-acc-stroke" x="81" y="74" width="37" height="42" fill="currentColor" stroke="currentColor" stroke-width="1" fill-opacity=".07"></rect>
+              <rect class="f360-a-tile" x="120" y="74" width="37" height="42" fill="currentColor" stroke="currentColor" stroke-width="1" fill-opacity=".07"></rect>
+            </svg>
+            <figcaption class="f360-fmt__cap">Fig. 06 — mosaic stitching</figcaption>
+          </figure>
         </article>
+
       </div>
     </div>
   </section>
@@ -820,6 +882,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <!-- Three.js is added here when the animation slot scene is built:
      <script src="https://cdn.jsdelivr.net/npm/three@0.164.0/build/three.min.js" defer></script> -->
-<script src="assets/js/main.js?v=8" defer></script>
+<script src="assets/js/main.js?v=9" defer></script>
 </body>
 </html>

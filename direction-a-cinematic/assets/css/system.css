@@ -491,13 +491,17 @@ hr {
   inset: 0 0 auto 0;
   z-index: 100;
   height: var(--f360-header-h);
-  background: linear-gradient(to bottom, rgba(8, 8, 10, 0.92), rgba(8, 8, 10, 0));
+  /* semantic — the header scrim rides on top of the page and has to follow
+     the edition; hard-coded night left dark text on a dark bar in daylight */
+  background: linear-gradient(to bottom,
+    color-mix(in srgb, var(--f360-bg) 92%, transparent),
+    color-mix(in srgb, var(--f360-bg) 0%, transparent));
   transition: transform 0.4s var(--f360-ease), background-color 0.3s linear,
     border-color 0.3s linear, backdrop-filter 0.3s linear;
   border-bottom: 1px solid transparent;
 }
 .f360-header--stuck {
-  background: rgba(8, 8, 10, 0.86);
+  background: color-mix(in srgb, var(--f360-bg) 86%, transparent);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   backdrop-filter: blur(14px) saturate(140%);
   border-bottom-color: var(--f360-line);
@@ -586,7 +590,10 @@ hr {
   top: calc(100% + 0.5rem);
   left: -0.4rem;
   min-width: 250px;
-  background: rgba(14, 15, 18, 0.97);
+  /* semantic, not a raw night value: in the day edition the link colour
+     flips to paper ink, so a hard-coded near-black panel left the submenu
+     dark-on-dark at about 2.3:1 */
+  background: color-mix(in srgb, var(--f360-bg-raise) 97%, transparent);
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   border: 1px solid var(--f360-line);
@@ -650,12 +657,14 @@ hr {
 
 @media (max-width: 1080px) {
   .f360-navtoggle { display: inline-flex; }
-  .f360-header__cta { display: none; }
+  .f360-btn.f360-header__cta { display: none; }  /* out-specifies .f360-btn */
   .f360-nav {
     position: fixed;
     inset: var(--f360-header-h) 0 0 0;
     margin: 0;
-    background: rgba(8, 8, 10, 0.98);
+    /* semantic — the mobile panel must invert with the edition, or every
+       link inside it sits at roughly 2.3:1 in the day edition */
+    background: color-mix(in srgb, var(--f360-bg) 98%, transparent);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-top: 1px solid var(--f360-line);
@@ -1190,6 +1199,8 @@ hr {
   letter-spacing: -0.025em;
   line-height: 1.2;
   flex: 1;
+  min-width: 0;            /* or the title refuses to shrink and shoves the icon out */
+  overflow-wrap: anywhere;
 }
 .f360-acc__count {
   font-family: var(--f360-mono);

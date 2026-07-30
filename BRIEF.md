@@ -1,7 +1,7 @@
 # 360Folio WordPress Template — Shared Design Brief
 
 **This is the single source of truth for all competing design directions.**
-Read it fully before writing any code. Source content: `../old-site-content.md`
+Read it fully before writing any code. Source content: `old-site-content.md`
 (read the sections for the pages you are building; do not read the 38 project pages).
 
 ---
@@ -28,7 +28,7 @@ Web Development · Web Hosting · Mobile Applications
 
 **Departments** (form dropdown): Sales · Technical Support · Billing · Marketing · Management
 
-**Brand assets available:** `../public/Logo.png`, `../public/icon_crop.png`
+**Brand assets available:** `shared/source/Logo.png`, `shared/source/icon_crop.png`
 (icon_crop is the camera-icon "0" cut from the wordmark — usable as a standalone mark).
 
 ---

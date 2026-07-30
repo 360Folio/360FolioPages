@@ -4,17 +4,22 @@
 project folder is copied across. Read this first, then `BRIEF.md` (the design
 brief the three directions were built to) and `VERDICT.md` (the scored comparison).
 
-**Last updated:** 2026-07-30 · matches git commit `2660a81`.
+**Last updated:** 2026-07-30 · GitHub: https://github.com/360Folio/360FolioPages (private)
 
 ---
 
 ## 1. What this is, in one paragraph
 
 A **static HTML/CSS/JS template set** for the 360Folio website, to be cut into a
-WordPress theme later. It is **not** the React/Vite app that occupies the rest of
-this repo (`src/`, `public/`, etc.) — that is a separate, older track described in
-the top-level `CLAUDE.md`. This work lives entirely under `wp-template/` and shares
-no code with the React site. Three competing **design directions** were built, one
+WordPress theme later.
+
+**This folder exists in two places, and the paths differ:**
+- **GitHub — `360Folio/360FolioPages` (private):** this folder IS the whole repo,
+  so it is the root. Everything you need is here and self-contained.
+- **The original working machine:** it sits as `wp-template/` inside the larger
+  `360folio-website` project, which also contains an unrelated React/Vite app
+  (`src/`, `models/`, etc.) described by that project's `CLAUDE.md`. The two share
+  no code. Only this folder was published. Three competing **design directions** were built, one
 was recommended (C), and all three are being carried forward in parallel until the
 client picks one.
 
@@ -23,14 +28,20 @@ client picks one.
 ## 2. How to run it (do this first on the new machine)
 
 The pages are plain files, served by a throwaway static server. **No build step, no
-npm install for this part.** From the repo root (`360folio-website/`):
+npm install.**
 
+If you cloned from GitHub (this folder is the root):
+```bash
+python -m http.server 5191
+```
+
+If you are in the original `360folio-website` project:
 ```bash
 python -m http.server 5191 --directory wp-template
 ```
 
-Then open **http://localhost:5191** — that is the comparison hub (`wp-template/index.html`),
-which links to every page in every direction.
+Either way open **http://localhost:5191** — the comparison hub (`index.html`), which
+links to every page in every direction.
 
 - Python 3 is the only requirement. If `python` is not found, try `python3` or `py -3`.
 - The server is disposable and **dies when the process stops** — restart it with the
@@ -48,11 +59,21 @@ current version is **v=12**.
 
 ## 3. Git state — READ THIS
 
-- The repo **is** under version control (`git init` was run mid-project). History is
-  intact; the latest 360Folio work is on the current branch.
-- **There is no remote.** Nothing has been pushed anywhere. The commits exist only in
-  this folder. When you copy the folder, the `.git/` directory comes with it and the
-  full history transfers — *as long as you copy the whole folder including hidden files.*
+- **Remote:** `https://github.com/360Folio/360FolioPages` — **private**. Kept private
+  deliberately: this repo carries three office addresses, direct phone numbers, the
+  client list, and pricing that is still unconfirmed (see §10).
+- The published history was produced with `git subtree split --prefix=wp-template`,
+  so `wp-template/` became the repo root and **no React/model/build file appears in
+  any commit**. All 14 commits and their reasoning were preserved.
+- **If you are working in the original `360folio-website` project:** its `master`
+  branch and the GitHub `main` branch have **no common ancestor** (the split rewrote
+  every SHA). You cannot push `master` — it would drag the whole React app in.
+  To publish new work from there, re-run the split and push:
+  ```bash
+  git subtree split --prefix=wp-template -b wp-only
+  git push origin wp-only:main
+  ```
+  If you cloned from GitHub instead, it is an ordinary repo — just commit and push.
 - Author identity used for commits: `360Folio <360folio@gmail.com>`.
 - Line-ending warnings (`LF will be replaced by CRLF`) on every commit are harmless
   Windows noise.
@@ -188,7 +209,7 @@ Keep the number consistent across a direction's pages. Current value: **v=12**.
 
 ## 8. Data & content sources
 
-- **`../old-site-content.md`** — scrape of the old site (`old.360folio.com`). Source
+- **`old-site-content.md`** — scrape of the old site (`old.360folio.com`). Source
   of truth for all copy. Contains 26 site pages + 38 project pages. Read the relevant
   section before writing a page; **do not invent statistics** (the brief forbids it —
   the old site's 2006-era stats were dropped deliberately).
@@ -201,7 +222,8 @@ Keep the number consistent across a direction's pages. Current value: **v=12**.
   Six files each: `360folio-logo{,-dark}.png` (wordmark, headers),
   `360folio-lockup{,-dark}.png` (wordmark + tagline, footers), `360folio-icon{,-dark}.png`.
   The `-dark` variants lift the black "Folio" ink to near-white for dark backgrounds;
-  brand red is untouched. Generated from `../public/Logo.png` and `../public/logotag_high.png`.
+  brand red is untouched. Generated from the masters in `shared/source/` (`Logo.png`,
+  `logotag_high.png`, `icon_crop.png`), kept so the assets can be regenerated at other sizes.
 
 ---
 
@@ -283,22 +305,22 @@ per page. All slots are reserved at final size so a scene drops in with zero lay
 ## 12. File map
 
 ```
-360folio-website/                 ← repo root; run the server from here
-├── old-site-content.md           ← content source of truth (26 + 38 pages)
-├── CLAUDE.md                      ← describes the OTHER (React) track; mostly not relevant here
-├── .claude/launch.json           ← has a "wp-template" preview config
-└── wp-template/                  ← ALL of this work
-    ├── HANDOFF.md                 ← this file
-    ├── BRIEF.md                   ← the shared design brief (read after this)
-    ├── JUDGING.md                 ← scoring rubric (written before review)
-    ├── VERDICT.md                 ← scored 3-way comparison + recommendation
-    ├── projects.json              ← 38 projects, structured
-    ├── index.html                 ← comparison hub (start page at :5191)
-    ├── shared/img/                ← logo assets (also copied into each direction)
-    ├── direction-a-cinematic/     ← 6 pages + assets/{css,js,img}
-    ├── direction-b-editorial/     ← 6 pages + assets/{css,js,img}
-    └── direction-c-technical/     ← 6 pages + assets/{css,js,img}   ← recommended
+<repo root>                        ← on GitHub this IS the root; locally it is wp-template/
+├── HANDOFF.md                     ← this file — read first
+├── BRIEF.md                       ← the shared design brief the 3 directions were built to
+├── JUDGING.md                     ← scoring rubric (written before any review)
+├── VERDICT.md                     ← scored 3-way comparison + recommendation
+├── old-site-content.md            ← CONTENT SOURCE OF TRUTH (26 site + 38 project pages)
+├── projects.json                  ← the 38 projects, structured, drives every work.html
+├── index.html                     ← comparison hub (open this at :5191)
+├── shared/
+│   ├── img/                       ← the 6 derived logo files
+│   └── source/                    ← master brand files, to regenerate assets at other sizes
+├── direction-a-cinematic/         ← 6 pages + assets/{css,js,img}
+├── direction-b-editorial/         ← 6 pages + assets/{css,js,img}
+└── direction-c-technical/         ← 6 pages + assets/{css,js,img}   ← recommended
 ```
 
-Note: there is also a top-level `plans/` directory belonging to the React track
-(per `CLAUDE.md`'s planning convention). It is **not** part of the wp-template work.
+Note: the original working machine also has a top-level `plans/` directory and a
+`CLAUDE.md` belonging to the React track. Neither is part of this work and neither
+was published here.

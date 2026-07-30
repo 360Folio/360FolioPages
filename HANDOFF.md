@@ -65,15 +65,18 @@ current version is **v=12**.
 - The published history was produced with `git subtree split --prefix=wp-template`,
   so `wp-template/` became the repo root and **no React/model/build file appears in
   any commit**. All 14 commits and their reasoning were preserved.
-- **If you are working in the original `360folio-website` project:** its `master`
-  branch and the GitHub `main` branch have **no common ancestor** (the split rewrote
-  every SHA). You cannot push `master` — it would drag the whole React app in.
-  To publish new work from there, re-run the split and push:
+- **This repo is the working home for the template.** Clone it and work here
+  directly — branch, commit, push, PR all behave normally.
   ```bash
-  git subtree split --prefix=wp-template -b wp-only
-  git push origin wp-only:main
+  git clone https://github.com/360Folio/360FolioPages.git
   ```
-  If you cloned from GitHub instead, it is an ordinary repo — just commit and push.
+- **Historical note:** the template was originally developed inside a larger
+  `360folio-website` project (which also holds an unrelated React/Vite app) and was
+  published from there with a subtree split. That project's git remote has since been
+  **detached**, so it can no longer push here — this prevents its `master` branch,
+  which carries the React app and ~80 MB of 3D model binaries, from being pushed by
+  accident. If a stale `wp-template/` copy still exists in that project, it is not
+  the source of truth. **This repo is.**
 - Author identity used for commits: `360Folio <360folio@gmail.com>`.
 - Line-ending warnings (`LF will be replaced by CRLF`) on every commit are harmless
   Windows noise.
